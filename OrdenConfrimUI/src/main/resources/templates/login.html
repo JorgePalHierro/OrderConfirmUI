@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Ingresar Datos de Usuario</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+body {
+	background-color: #ffffff; /* Color de fondo blanco */
+	font-family: Arial, sans-serif; /* Fuente principal */
+}
+
+.custom-logo {
+	max-width: 300px; /* Tamaño máximo del logo */
+	display: block;
+	margin: 20px auto; /* Centrado horizontal con margen superior */
+}
+
+.page-title {
+	text-align: center;
+	font-size: 32px;
+	color: #343a40; /* Color del título principal */
+	margin-bottom: 30px;
+}
+
+.form-container {
+	background-color: #ffffff; /* Fondo blanco del formulario */
+	padding: 30px;
+	border-radius: 8px; /* Bordes redondeados */
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.form-group label {
+	font-weight: bold; /* Texto del label en negrita */
+	color: #6c757d; /* Color del label */
+}
+
+.form-control {
+	padding: 12px;
+	margin-bottom: 15px;
+	background-color: #f2f2f2; /* Fondo gris claro de los campos */
+	border: 1px solid #ced4da; /* Borde gris claro */
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.btn-submit {
+	background-color: #ffc107; /* Color de fondo del botón */
+	border: none;
+	color: #343a40;
+	padding: 12px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+	transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+	background-color: #ffca28;
+	/* Color de fondo del botón al pasar el mouse */
+}
+
+.invalid-feedback {
+	color: #dc3545; /* Color del mensaje de error */
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<img src="logo.png" alt="Logo" class="custom-logo">
+		<h1 class="page-title">Ingresar Datos de Usuario</h1>
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<div class="form-container">
+					<form th:action="@{/ordenesconfirmadas}" th:object="${loginForm}"
+						method="post" class="needs-validation" novalidate>
+						<div class="form-group">
+							<label for="username">Usuario:</label> <input type="text"
+								id="username" th:field="*{username}" class="form-control"
+								maxlength="15" required>
+							<div class="invalid-feedback">Por favor ingresa el usuario.</div>
+						</div>
+						<div class="form-group">
+							<label for="password">Password:</label> <input type="password"
+								id="password" th:field="*{password}" class="form-control"
+								required>
+							<div class="invalid-feedback">Por favor ingresa el
+								Password.</div>
+						</div>
+						<button type="submit" class="btn-submit">Ingresar</button>
+						<div th:if="${error}" class="mt-3 alert alert-danger">
+							<p th:text="${error}"></p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var usernameInput = document.getElementById('username');
+			usernameInput.addEventListener('input', function() {
+				this.value = this.value.slice(0, 15); // Solo permite números y limita a 8 caracteres
+			});
+		});
+	</script>
+</body>
+</html>
