@@ -1,0 +1,42 @@
+25/02/2025 08:22:18 - Intento de login con usuario: 52195802
+25/02/2025 08:22:19 - Logeo Exitoso
+25/02/2025 08:36:17 - Intento de login con usuario: 52195802
+25/02/2025 08:36:17 - Logeo Exitoso
+25/02/2025 08:45:06 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+25/02/2025 10:28:23 - Intento de login con usuario: 52195802
+25/02/2025 10:28:24 - Logeo Exitoso
+25/02/2025 10:31:14 - Intento de login con usuario: 52195802
+25/02/2025 10:31:14 - Logeo Exitoso
+25/02/2025 10:32:40 - Intento de login con usuario: 52195802
+25/02/2025 10:32:40 - Logeo Exitoso
+25/02/2025 10:37:26 - Intento de login con usuario: 52195802
+25/02/2025 10:37:26 - Logeo Exitoso
+25/02/2025 10:49:46 - Intento de login con usuario: 52195802
+25/02/2025 10:49:46 - Logeo Exitoso
+25/02/2025 10:54:41 - Intento de login con usuario: 52195802
+25/02/2025 10:54:41 - Logeo Exitoso
+25/02/2025 10:56:51 - Intento de login con usuario: 52195802
+25/02/2025 10:56:52 - Logeo Exitoso
+25/02/2025 10:57:53 - Intento de login con usuario: 52195802
+25/02/2025 10:57:54 - Logeo Exitoso
+25/02/2025 10:58:32 - Intento de login con usuario: 52195802
+25/02/2025 10:58:33 - Logeo Exitoso
+25/02/2025 10:59:01 - Intento de login con usuario: 52195802
+25/02/2025 10:59:01 - Logeo Exitoso
+25/02/2025 11:00:44 - Intento de login con usuario: 52195802
+25/02/2025 11:00:44 - Logeo Exitoso
+25/02/2025 11:03:11 - Intento de login con usuario: 52195802
+25/02/2025 11:03:11 - Logeo Exitoso
+25/02/2025 11:04:41 - Intento de login con usuario: 52195802
+25/02/2025 11:04:42 - Logeo Exitoso
+25/02/2025 11:10:52 - Intento de login con usuario: 52195802
+25/02/2025 11:10:53 - Logeo Exitoso
+25/02/2025 11:40:57 - Intento de login con usuario: 52195802
+25/02/2025 11:41:23 - Intento de login con usuario: 52195802
+25/02/2025 11:41:25 - Intento de login con usuario: 52195802
+25/02/2025 11:43:57 - Intento de login con usuario: 52195802
+25/02/2025 11:43:58 - Logeo Exitoso
+25/02/2025 11:47:12 - Intento de login con usuario: 52195802
+25/02/2025 11:47:12 - Logeo Exitoso
+25/02/2025 11:49:32 - Intento de login con usuario: 52195802
+25/02/2025 11:49:33 - Logeo Exitoso

@@ -2,9 +2,15 @@ package com.example.OrdenConfrimUI;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +19,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import com.example.Services.ConsultaService;
+import com.example.Utils.Log;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -35,6 +47,15 @@ public class OrderConfirmController {
 	private TiendasRepository tiendasRepository;
 	@Autowired
 	private ConfirmacionOrdenRepository confirmacionOrdenRepository;
+	@Autowired
+	private Log log = new Log();
+
+	private PatchService patchService;
+
+	@Autowired
+	public OrderConfirmController(PatchService patchService) {
+		this.patchService = patchService;
+	}
 
 	List<TransaccionDTO> transaccionesDTO;
 
@@ -46,29 +67,14 @@ public class OrderConfirmController {
 
 	@PostMapping("/ordenesconfirmadas")
 	public String login(@ModelAttribute LoginForm loginForm, Model model) {
-
+		 log.escribirLog("Intento de login con usuario: " + loginForm.getUsername());
 		if (authService.validate(loginForm.getUsername(), loginForm.getPassword())) {
 
+			 log.escribirLog("Logeo Exitoso");
 			Optional<Posusuarios> usuar = userRepository.findById(loginForm.getUsername());
 
 			String NumTienda = usuar.map(Posusuarios::getCNUMTIEN).orElse(null);
 
-			//List<ConfirmacionOrden> transacciones = null;
-
-			/*if (NumTienda.contains("9999")) {
-				transacciones = confirmacionOrdenRepository.findAll();
-			} else {
-				transacciones = confirmacionOrdenRepository.findByTienda(NumTienda);
-
-			}*/
-
-			// Convertir las entidades de ConfirmacionOrden a DTOs (si es necesario)
-		//	transaccionesDTO = transacciones.stream().map(this::convertirAArquitecturaDTO).collect(Collectors.toList());
-
-			// Pasar las transacciones filtradas al modelo
-			//model.addAttribute("transacciones", transaccionesDTO);
-
-			// List<String> tiendas = Arrays.asList("Tienda 1", "Tienda 2", "Tienda 3");
 			List<String> tiendas = cargarListaTiendas(NumTienda);
 
 			model.addAttribute("tiendas", tiendas);
@@ -76,6 +82,7 @@ public class OrderConfirmController {
 
 			return "index";
 		} else {
+			log.escribirLog("Error de login: Usuario o contraseña incorrectos");
 			model.addAttribute("error", "Usuario o contraseña incorrectos");
 			return "login";
 		}
@@ -85,6 +92,8 @@ public class OrderConfirmController {
 	@PostMapping("/filtrar")
 	public String filtrarDatos(@RequestParam String tienda, @RequestParam String fecha, @RequestParam String estado,
 			Model model) throws ParseException {
+		log.escribirLog("Filtro de datos: tienda=" + tienda + ", fecha=" + fecha + ", estado=" + estado);
+	    
 		SimpleDateFormat formatoEntrada = new SimpleDateFormat("yyyy-MM-dd");
 		// Crear un objeto SimpleDateFormat con el formato de salida
 		SimpleDateFormat formatoSalida = new SimpleDateFormat("ddMMyy");
@@ -99,21 +108,83 @@ public class OrderConfirmController {
 
 		if (estado.contains("MOSTRAR TODO")) {
 			System.out.println("Estado:" + estado);
-			transacciones = confirmacionOrdenRepository.findByConsecutivoAndTiendaAndFecha("999",tienda.substring(0, 4), fechaFormateada);
+			transacciones = confirmacionOrdenRepository.findByConsecutivoAndTiendaAndFecha("999",
+					tienda.substring(0, 4), fechaFormateada);
 		} else {
 			System.out.println("Estado:" + estado);
-			transacciones = confirmacionOrdenRepository.findByConsecutivoAndTiendaAndFechaAndConfirmacion("999",tienda.substring(0, 4),
-					fechaFormateada, tablaConfirmacionDN(estado));
+			transacciones = confirmacionOrdenRepository.findByConsecutivoAndTiendaAndFechaAndConfirmacion("999",
+					tienda.substring(0, 4), fechaFormateada, tablaConfirmacionDN(estado));
 		}
 
 		// Convertir las entidades de ConfirmacionOrden a DTOs (si es necesario)
-		transaccionesDTO = transacciones.stream().map(this::convertirAArquitecturaDTO) // Este
-																						// método es
-																						// un
-																						// ejemplo
-																						// de
-																						// conversión
-				.collect(Collectors.toList());
+		transaccionesDTO = transacciones.stream().map(this::convertirAArquitecturaDTO).collect(Collectors.toList());
+
+		// Pasar las transacciones filtradas al modelo
+		model.addAttribute("transacciones", transaccionesDTO);
+
+		// Pasar las tiendas al modelo para el formulario de filtro
+		model.addAttribute("tiendas", cargarListaTiendas("9999"));
+
+		return "index"; // Recargar la vista con los resultados
+	}
+
+	@PostMapping("/filtrarConfirm")
+	public String filtrarDatosConfirmacion(@RequestParam String tienda, @RequestParam String terminal,
+			@RequestParam String transaccion, @RequestParam String estado, Model model) throws ParseException {
+
+		System.out.println("Tienda:" + tienda + "  Terminal: " + terminal);
+		String tiendaFiltrada = tienda.substring(0, 4);
+		String consecutivo = "999"; // Valor predeterminado
+
+		List<ConfirmacionOrden> transaccionesTienda = null;
+		List<ConfirmacionOrden> transaccionesTerminal = null;
+		List<ConfirmacionOrden> transaccionesTransaccion = null;
+		List<ConfirmacionOrden> transaccionesEstado = null;
+		List<ConfirmacionOrden> resultados;
+		System.out.println("Tienda: " + tienda);
+
+		System.out.println("Terminal: " + terminal);
+
+		System.out.println("Transaccion: " + transaccion);
+
+		System.out.println("Estado: " + estado);
+
+		transaccionesTienda = confirmacionOrdenRepository.findByConsecutivoAndTienda(consecutivo, tiendaFiltrada);
+		if (!terminal.isEmpty())
+			transaccionesTerminal = confirmacionOrdenRepository.findByConsecutivoAndTerminal(consecutivo, terminal);
+		if (!transaccion.isEmpty())
+			transaccionesTransaccion = confirmacionOrdenRepository.findByConsecutivoAndTransaccion(consecutivo, transaccion);
+		if (!estado.contains("MOSTRAR TODO"))
+			transaccionesEstado = confirmacionOrdenRepository.findByConsecutivoAndConfirmacion(consecutivo,tablaConfirmacionDN(estado));
+
+		resultados = obtenerRegistrosComunes(transaccionesTienda, transaccionesTerminal, transaccionesTransaccion,
+				transaccionesEstado);
+
+		// transacciones =
+		// confirmacionOrdenRepository.findByConsecutivoAndTiendaAndTerminalAndTransaccionAndEstado("999",
+		// tienda.substring(0, 4), terminal, transaccion,tablaConfirmacionDN(estado));
+
+		// Convertir las entidades de ConfirmacionOrden a DTOs (si es necesario)
+		transaccionesDTO = resultados.stream().map(this::convertirAArquitecturaDTO).collect(Collectors.toList());
+
+		// Pasar las transacciones filtradas al modelo
+		model.addAttribute("transacciones", transaccionesDTO);
+
+		// Pasar las tiendas al modelo para el formulario de filtro
+		model.addAttribute("tiendas", cargarListaTiendas("9999"));
+
+		return "index"; // Recargar la vista con los resultados
+	}
+
+	@PostMapping("/filtrarOrden")
+	public String filtrarDatosOrden(@RequestParam String orden, Model model) throws ParseException {
+
+		List<ConfirmacionOrden> transacciones;
+
+		transacciones = confirmacionOrdenRepository.findByConsecutivoAndNumeroOrden("999", orden);
+
+		// Convertir las entidades de ConfirmacionOrden a DTOs (si es necesario)
+		transaccionesDTO = transacciones.stream().map(this::convertirAArquitecturaDTO).collect(Collectors.toList());
 
 		// Pasar las transacciones filtradas al modelo
 		model.addAttribute("transacciones", transaccionesDTO);
@@ -177,6 +248,70 @@ public class OrderConfirmController {
 		return null;
 	}
 
+	@PostMapping("/confirmar")
+	public ResponseEntity<String> confirmar(@RequestBody Ticket confirmData) {
+		log.escribirLog("Intentando Confirmar Registro : tienda=" + confirmData.getNumeroTienda() + ", terminal=" + confirmData.getTerminal() +",transaccion=" +confirmData.getTransaccion()+", estado=" + confirmData.getFecha());
+		
+		// Mostrar en consola los datos recibidos (puedes quitarlo en producción)
+		System.out.println("Tienda: " + confirmData.getNumeroTienda());
+		System.out.println("Terminal: " + confirmData.getTerminal());
+		System.out.println("Transacción: " + confirmData.getTransaccion());
+		System.out.println("Fecha: " + confirmData.getFecha());
+		System.out.println("Número de Orden: " + confirmData.getOrden());
+		System.out.println("Vendedor: " + confirmData.getCorreo());
+		System.out.println("Importe: " + confirmData.getTotal());
+		System.out.println("Confirmación: " + confirmData.getConfirmacion());
+
+		// Aquí puedes llamar a tus servicios (por ejemplo, ConsultaService,
+		// patchService, etc.)
+		ConsultaService consulta = new ConsultaService();
+		System.out.println(consulta.getApiResponse(confirmData.getOrden()));
+		try {
+			System.out
+					.println("Instrumento: " + getPaymentInstrumentId(consulta.getApiResponse(confirmData.getOrden())));			
+			confirmData.setInstrumento(getPaymentInstrumentId(consulta.getApiResponse(confirmData.getOrden())));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		String resp;
+		try {
+			// Ejemplo de llamada al servicio PATCH (ajusta los parámetros según
+			// corresponda)
+			resp = patchService.sendPatchRequest(confirmData.getOrden(), confirmData.getInstrumento(),
+					confirmData.getTerminal(), confirmData.getNumeroTienda(), confirmData.getTransaccion(),
+					confirmData.getFecha());
+			System.out.println("Respuesta de clase patch: " + resp);
+			
+			if (resp.contains("Error: Registro duplicado")) {
+				resp = "Error: Registro duplicado";
+				log.escribirLog("Error: Registro duplicado");
+				
+				
+			} else if (resp.contains("Registro ya confirmado")) {
+				resp = "Registro ya confirmado";
+				log.escribirLog("Registro ya confirmado");
+			} else {
+				if (resp.contains("Registro caducado")) {
+					resp = "Error: Registro vencido";
+					log.escribirLog("Error: Registro vencido");
+				} else
+					resp = "Registro confirmado con exito, espere unos minutos para que se actualice el registro.";
+				log.escribirLog("Registro confirmado con exito, espere unos minutos para que se actualice el registro.");
+			}
+
+			// resp = "Orden confrmada exitosamente, espera unos minutos para que se refleje
+			// el cambio en la tabla";
+		} catch (IOException e) {
+			resp = "Error en el servidor:  " + e.getMessage();
+			log.escribirLog("Error en el servidor:  " + e.getMessage());
+
+		}
+
+		// Devuelve la respuesta apropiada (puede ser JSON, texto, etc.)
+		return ResponseEntity.ok(resp);
+	}
+
 	// Método auxiliar para definir estilo de encabezado
 	private CellStyle createHeaderCellStyle(Workbook workbook) {
 		CellStyle style = workbook.createCellStyle();
@@ -236,17 +371,30 @@ public class OrderConfirmController {
 	}
 
 	private String tablaConfirmacion(String confirmacion) {
-	    if (confirmacion.equals("1")) {
-	        return "CONFIRMADO";
-	    } else if (confirmacion.equals("0")) {
-	        return "SIN CONFIRMAR";
-	    } else if (confirmacion.equals("2")) {
-	        return "ORDEN NO ENCONTRADA";
-	    } else {
-	        return "ESTADO DESCONOCIDO";
-	    }
+		if (confirmacion.equals("1")) {
+			return "CONFIRMADO";
+		} else if (confirmacion.equals("0")) {
+			return "SIN CONFIRMAR";
+		} else if (confirmacion.equals("2")) {
+			return "ORDEN NO ENCONTRADA";
+		} else {
+			return "ESTADO DESCONOCIDO";
+		}
 	}
 
+	public static String getPaymentInstrumentId(String jsonResponse) throws IOException {
+		ObjectMapper objectMapper = new ObjectMapper();
+		JsonNode rootNode = objectMapper.readTree(jsonResponse);
+
+		// Acceder a la lista de payment_instruments
+		JsonNode paymentInstruments = rootNode.path("payment_instruments");
+
+		if (paymentInstruments.isArray() && paymentInstruments.size() > 0) {
+			return paymentInstruments.get(0).path("payment_instrument_id").asText();
+		}
+
+		return null; // Retornar null si no se encuentra el ID
+	}
 
 	private String tablaConfirmacionDN(String confirmacion) {
 		if (confirmacion.contains("CONFIRMADO"))
@@ -256,8 +404,8 @@ public class OrderConfirmController {
 	}
 
 	private String tablaConversion(String pos_TENDER_TYPE_CODE) {
-		if(pos_TENDER_TYPE_CODE == null)
-			pos_TENDER_TYPE_CODE="1";
+		if (pos_TENDER_TYPE_CODE == null)
+			pos_TENDER_TYPE_CODE = "1";
 		switch (pos_TENDER_TYPE_CODE) {
 		case "1":
 			return "Efectivo";
@@ -277,6 +425,30 @@ public class OrderConfirmController {
 		default:
 			return "UNKNOWN_CODE";
 		}
+	}
+
+	public static List<ConfirmacionOrden> obtenerRegistrosComunes(List<ConfirmacionOrden> transaccionesTienda,
+			List<ConfirmacionOrden> transaccionesTerminal, List<ConfirmacionOrden> transaccionesTransaccion,
+			List<ConfirmacionOrden> transaccionesEstado) {
+
+		// Filtrar listas no nulas
+		List<List<ConfirmacionOrden>> listasNoNulas = Arrays
+				.asList(transaccionesTienda, transaccionesTerminal, transaccionesTransaccion, transaccionesEstado)
+				.stream().filter(Objects::nonNull).collect(Collectors.toList());
+
+		if (listasNoNulas.isEmpty()) {
+			return Collections.emptyList();
+		}
+
+		// Convertir la primera lista en un Set para comparar
+		Set<ConfirmacionOrden> interseccion = new HashSet<>(listasNoNulas.get(0));
+
+		// Intersectar con las demás listas
+		for (int i = 1; i < listasNoNulas.size(); i++) {
+			interseccion.retainAll(new HashSet<>(listasNoNulas.get(i)));
+		}
+
+		return new ArrayList<>(interseccion);
 	}
 
 }

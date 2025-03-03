@@ -173,7 +173,7 @@ public class ConfirmacionOrden {
 	}
 
 	public void setConsecutivo(String consecutivo) {
-		this.consecutivo = consecutivo;
+		this.consecutivo = consecutivo;		
 	}
 
 	public static ConfirmacionOrden fromDTO(TransaccionDTO dto) {
@@ -211,5 +211,14 @@ public class ConfirmacionOrden {
 			e.printStackTrace();
 			return null; // Retornar null en caso de error
 		}
+	}
+
+	@Override
+	public String toString() {
+		return "ConfirmacionOrden [consecutivo=" + consecutivo + ", confirmacion=" + confirmacion + ", codigoRespuesta="
+				+ codigoRespuesta + ", numAutorizacion=" + numAutorizacion + ", fecha=" + fecha + ", esquema=" + esquema
+				+ ", vendedor=" + vendedor + ", importe=" + importe + ", numTarjeta=" + numTarjeta + ", tipo=" + tipo
+				+ ", numeroOrden=" + numeroOrden + ", transaccion=" + transaccion + ", terminal=" + terminal
+				+ ", tienda=" + tienda + ", fechacompleta=" + fechacompleta + "]";
 	}
 }

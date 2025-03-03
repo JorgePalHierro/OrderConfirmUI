@@ -1,0 +1,109 @@
+19/02/2025 10:03:21 - Intento de login con usuario: 52195802
+19/02/2025 10:03:22 - Logeo Exitoso
+19/02/2025 10:05:36 - Intento de login con usuario: 52195802
+19/02/2025 10:05:36 - Logeo Exitoso
+19/02/2025 10:07:37 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 10:07:40 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-18, estado=MOSTRAR TODO
+19/02/2025 10:16:22 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-01-17, estado=MOSTRAR TODO
+19/02/2025 10:16:30 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-01-17, estado=SIN CONFIRMAR
+19/02/2025 10:16:36 - Filtro de datos: tienda=1000 - Centro, fecha=2025-01-17, estado=SIN CONFIRMAR
+19/02/2025 10:16:41 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-01-17, estado=SIN CONFIRMAR
+19/02/2025 10:17:04 - Filtro de datos: tienda=1001 - Coyoacan, fecha=2025-01-17, estado=SIN CONFIRMAR
+19/02/2025 10:17:06 - Filtro de datos: tienda=1000 - Centro, fecha=2025-01-17, estado=SIN CONFIRMAR
+19/02/2025 10:17:48 - Intentando Confirmar Registro : tienda=1008, terminal=246,transaccion=5200, estado=301224
+19/02/2025 10:17:53 - Registro ya confirmado
+19/02/2025 10:18:25 - Intentando Confirmar Registro : tienda=1008, terminal=671,transaccion=246, estado=010225
+19/02/2025 10:18:28 - Error: Registro vencido
+19/02/2025 10:18:28 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+19/02/2025 10:18:48 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=SIN CONFIRMAR
+19/02/2025 10:18:55 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+19/02/2025 10:18:57 - Error: Registro vencido
+19/02/2025 10:18:57 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+19/02/2025 10:18:59 - Intentando Confirmar Registro : tienda=1008, terminal=671,transaccion=246, estado=010225
+19/02/2025 10:19:02 - Error: Registro vencido
+19/02/2025 10:19:02 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+19/02/2025 10:23:24 - Intento de login con usuario: 52195802
+19/02/2025 10:23:25 - Logeo Exitoso
+19/02/2025 10:24:04 - Intento de login con usuario: 52195802
+19/02/2025 10:24:05 - Logeo Exitoso
+19/02/2025 10:45:35 - Intento de login con usuario: 52195802
+19/02/2025 10:45:36 - Logeo Exitoso
+19/02/2025 10:49:35 - Intentando Confirmar Registro : tienda=1005, terminal=725,transaccion=1223, estado=170125
+19/02/2025 10:49:40 - Error: Registro vencido
+19/02/2025 10:49:40 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+19/02/2025 10:56:44 - Intento de login con usuario: 52195802
+19/02/2025 10:56:45 - Logeo Exitoso
+19/02/2025 11:10:28 - Intento de login con usuario: 52195802
+19/02/2025 11:10:28 - Logeo Exitoso
+19/02/2025 11:10:45 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 11:10:49 - Filtro de datos: tienda=1003 - Guadalajara, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 11:15:47 - Filtro de datos: tienda=1003 - Guadalajara, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 11:42:32 - Intento de login con usuario: 52195802
+19/02/2025 11:42:32 - Logeo Exitoso
+19/02/2025 11:42:51 - Intentando Confirmar Registro : tienda=1003, terminal=225,transaccion=4370, estado=190125
+19/02/2025 11:42:55 - Registro ya confirmado
+19/02/2025 11:46:19 - Intento de login con usuario: 52195802
+19/02/2025 11:46:19 - Logeo Exitoso
+19/02/2025 11:46:40 - Intento de login con usuario: 52195802
+19/02/2025 11:46:40 - Logeo Exitoso
+19/02/2025 12:00:34 - Intento de login con usuario: 52195802
+19/02/2025 12:00:35 - Logeo Exitoso
+19/02/2025 12:29:10 - Intento de login con usuario: 52195802
+19/02/2025 12:29:11 - Logeo Exitoso
+19/02/2025 12:34:11 - Intento de login con usuario: 52195802
+19/02/2025 12:34:12 - Logeo Exitoso
+19/02/2025 12:34:23 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 12:34:24 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 12:34:24 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 12:34:25 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 12:34:25 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 12:34:25 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 12:34:29 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-18, estado=MOSTRAR TODO
+19/02/2025 12:58:24 - Intento de login con usuario: 52195802
+19/02/2025 12:58:26 - Logeo Exitoso
+19/02/2025 12:58:32 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 12:58:36 - Filtro de datos: tienda=1003 - Guadalajara, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 12:58:42 - Intentando Confirmar Registro : tienda=1003, terminal=26,transaccion=9276, estado=190225
+19/02/2025 12:58:48 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+19/02/2025 13:09:28 - Intento de login con usuario: 52195802
+19/02/2025 13:09:29 - Logeo Exitoso
+19/02/2025 13:14:32 - Intento de login con usuario: 52195802
+19/02/2025 13:14:33 - Logeo Exitoso
+19/02/2025 13:16:54 - Intento de login con usuario: 52195802
+19/02/2025 13:16:55 - Logeo Exitoso
+19/02/2025 13:17:54 - Intento de login con usuario: 52195802
+19/02/2025 13:17:54 - Logeo Exitoso
+19/02/2025 13:18:56 - Intento de login con usuario: 52195802
+19/02/2025 13:18:57 - Logeo Exitoso
+19/02/2025 13:19:41 - Intento de login con usuario: 52195802
+19/02/2025 13:19:42 - Logeo Exitoso
+19/02/2025 15:35:13 - Intento de login con usuario: 52195802
+19/02/2025 15:35:19 - Logeo Exitoso
+19/02/2025 15:43:39 - Intento de login con usuario: 52195802
+19/02/2025 15:43:39 - Logeo Exitoso
+19/02/2025 16:12:18 - Intento de login con usuario: 52195802
+19/02/2025 16:12:19 - Logeo Exitoso
+19/02/2025 16:20:09 - Intento de login con usuario: 52195802
+19/02/2025 16:20:10 - Logeo Exitoso
+19/02/2025 16:20:46 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 16:20:49 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 16:20:51 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-18, estado=MOSTRAR TODO
+19/02/2025 16:23:48 - Intento de login con usuario: 52195802
+19/02/2025 16:23:49 - Logeo Exitoso
+19/02/2025 16:23:56 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-18, estado=MOSTRAR TODO
+19/02/2025 16:24:09 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 16:24:14 - Filtro de datos: tienda=1005 - Perisur, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 16:24:19 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 16:40:03 - Intento de login con usuario: 52195802
+19/02/2025 16:40:04 - Logeo Exitoso
+19/02/2025 16:40:11 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 16:40:15 - Filtro de datos: tienda=1005 - Perisur, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 16:40:58 - Filtro de datos: tienda=1003 - Guadalajara, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 16:41:32 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 16:41:38 - Intentando Confirmar Registro : tienda=1008, terminal=665,transaccion=2342, estado=190225
+19/02/2025 16:41:42 - Registro ya confirmado
+19/02/2025 17:00:36 - Intento de login con usuario: 52195802
+19/02/2025 17:00:36 - Logeo Exitoso
+19/02/2025 17:00:48 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-19, estado=MOSTRAR TODO
+19/02/2025 17:00:54 - Intentando Confirmar Registro : tienda=1008, terminal=247,transaccion=5590, estado=190225
+19/02/2025 17:00:58 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.

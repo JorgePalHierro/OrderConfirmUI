@@ -1,0 +1,65 @@
+18/02/2025 10:17:49 - Intento de login con usuario: 52195802
+18/02/2025 10:17:50 - Logeo Exitoso
+18/02/2025 10:28:48 - Intento de login con usuario: 52195802
+18/02/2025 10:28:48 - Logeo Exitoso
+18/02/2025 10:34:28 - Intento de login con usuario: 52195802
+18/02/2025 10:34:28 - Logeo Exitoso
+18/02/2025 10:38:41 - Intento de login con usuario: 52195802
+18/02/2025 10:38:41 - Logeo Exitoso
+18/02/2025 10:40:01 - Intento de login con usuario: 52195802
+18/02/2025 10:40:02 - Logeo Exitoso
+18/02/2025 10:41:07 - Intento de login con usuario: 52195802
+18/02/2025 10:41:08 - Logeo Exitoso
+18/02/2025 10:46:16 - Intento de login con usuario: 52195802
+18/02/2025 10:46:17 - Logeo Exitoso
+18/02/2025 10:47:10 - Intento de login con usuario: 52195802
+18/02/2025 10:47:10 - Logeo Exitoso
+18/02/2025 10:49:09 - Intento de login con usuario: 52195802
+18/02/2025 10:49:10 - Logeo Exitoso
+18/02/2025 11:12:00 - Intento de login con usuario: 52195802
+18/02/2025 11:12:01 - Logeo Exitoso
+18/02/2025 11:37:25 - Intento de login con usuario: 52195802
+18/02/2025 11:37:25 - Logeo Exitoso
+18/02/2025 11:55:25 - Intento de login con usuario: 52195802
+18/02/2025 11:55:26 - Logeo Exitoso
+18/02/2025 11:58:38 - Intento de login con usuario: 52195802
+18/02/2025 11:58:38 - Logeo Exitoso
+18/02/2025 12:00:26 - Intento de login con usuario: 52195802
+18/02/2025 12:00:26 - Logeo Exitoso
+18/02/2025 12:05:31 - Intento de login con usuario: 52195802
+18/02/2025 12:05:32 - Logeo Exitoso
+18/02/2025 12:05:42 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-18, estado=MOSTRAR TODO
+18/02/2025 12:06:12 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-18, estado=MOSTRAR TODO
+18/02/2025 16:25:16 - Intento de login con usuario: 52195802
+18/02/2025 16:25:16 - Logeo Exitoso
+18/02/2025 16:25:22 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-18, estado=MOSTRAR TODO
+18/02/2025 16:26:57 - Intento de login con usuario: 52195802
+18/02/2025 16:26:58 - Logeo Exitoso
+18/02/2025 16:27:02 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-18, estado=MOSTRAR TODO
+18/02/2025 16:28:07 - Intento de login con usuario: 52195802
+18/02/2025 16:28:07 - Logeo Exitoso
+18/02/2025 16:28:11 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-18, estado=MOSTRAR TODO
+18/02/2025 16:29:42 - Intento de login con usuario: 52195802
+18/02/2025 16:29:42 - Logeo Exitoso
+18/02/2025 16:29:46 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-18, estado=MOSTRAR TODO
+18/02/2025 16:32:36 - Intento de login con usuario: 52195802
+18/02/2025 16:32:36 - Logeo Exitoso
+18/02/2025 16:35:23 - Intento de login con usuario: 52195802
+18/02/2025 16:35:24 - Logeo Exitoso
+18/02/2025 16:58:26 - Intentando Confirmar Registro : tienda=1000, terminal=145,transaccion=2614, estado=301224
+18/02/2025 16:58:31 - Registro ya confirmado
+18/02/2025 16:58:41 - Intentando Confirmar Registro : tienda=1000, terminal=145,transaccion=2270, estado=241224
+18/02/2025 16:58:44 - Registro ya confirmado
+18/02/2025 16:58:48 - Intentando Confirmar Registro : tienda=1000, terminal=145,transaccion=2654, estado=311224
+18/02/2025 16:58:50 - Registro ya confirmado
+18/02/2025 16:59:24 - Intentando Confirmar Registro : tienda=1000, terminal=145,transaccion=2614, estado=301224
+18/02/2025 16:59:28 - Registro ya confirmado
+18/02/2025 16:59:47 - Intentando Confirmar Registro : tienda=1008, terminal=671,transaccion=246, estado=010225
+18/02/2025 16:59:49 - Error: Registro vencido
+18/02/2025 16:59:49 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+18/02/2025 16:59:54 - Intentando Confirmar Registro : tienda=1008, terminal=220,transaccion=6024, estado=301224
+18/02/2025 16:59:56 - Registro ya confirmado
+18/02/2025 16:59:59 - Intentando Confirmar Registro : tienda=1008, terminal=243,transaccion=4758, estado=281224
+18/02/2025 17:00:02 - Registro ya confirmado
+18/02/2025 17:00:05 - Intentando Confirmar Registro : tienda=1008, terminal=187,transaccion=1515, estado=070225
+18/02/2025 17:00:09 - Registro ya confirmado

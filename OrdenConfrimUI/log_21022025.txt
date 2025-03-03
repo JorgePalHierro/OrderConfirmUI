@@ -1,0 +1,6 @@
+21/02/2025 10:43:17 - Intento de login con usuario: 52195802
+21/02/2025 10:43:18 - Logeo Exitoso
+21/02/2025 10:43:23 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-21, estado=MOSTRAR TODO
+21/02/2025 10:43:28 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-20, estado=MOSTRAR TODO
+21/02/2025 11:55:38 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-20, estado=MOSTRAR TODO
+21/02/2025 11:55:42 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-21, estado=MOSTRAR TODO

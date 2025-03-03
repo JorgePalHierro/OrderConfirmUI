@@ -80,10 +80,11 @@ body {
 					<form th:action="@{/ordenesconfirmadas}" th:object="${loginForm}"
 						method="post" class="needs-validation" novalidate>
 						<div class="form-group">
-							<label for="username">Usuario:</label> <input type="text"
-								id="username" th:field="*{username}" class="form-control"
-								maxlength="15" required>
-							<div class="invalid-feedback">Por favor ingresa el usuario.</div>
+							<label for="username">Usuario:</label>
+							<input type="text" id="username" th:field="*{username}" class="form-control"
+								maxlength="8" pattern="\d{8}" title="Solo se permiten exactamente 8 dígitos"
+								required>
+							<div class="invalid-feedback">Por favor ingresa un usuario de 8 dígitos.</div>
 						</div>
 						<div class="form-group">
 							<label for="password">Password:</label> <input type="password"
@@ -111,7 +112,12 @@ body {
 		document.addEventListener('DOMContentLoaded', function() {
 			var usernameInput = document.getElementById('username');
 			usernameInput.addEventListener('input', function() {
-				this.value = this.value.slice(0, 15); // Solo permite números y limita a 8 caracteres
+				// Solo permite números
+				if (this.value.length > 8) {
+					this.value = this.value.slice(0, 8);
+				}
+				// Elimina cualquier carácter que no sea un número
+				this.value = this.value.replace(/[^0-9]/g, '');
 			});
 		});
 	</script>

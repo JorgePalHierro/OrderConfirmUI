@@ -1,0 +1,4 @@
+26/02/2025 10:50:32 - Intento de login con usuario: 52195802
+26/02/2025 10:50:33 - Logeo Exitoso
+26/02/2025 16:24:04 - Intento de login con usuario: 52195802
+26/02/2025 16:24:05 - Logeo Exitoso

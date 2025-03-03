@@ -1,0 +1,162 @@
+24/02/2025 08:37:19 - Intento de login con usuario: 52195802
+24/02/2025 08:37:19 - Logeo Exitoso
+24/02/2025 08:38:02 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 08:49:20 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 10:48:31 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 10:54:22 - Intento de login con usuario: 52195802
+24/02/2025 10:54:22 - Logeo Exitoso
+24/02/2025 10:54:27 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 10:54:31 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 10:56:37 - Intento de login con usuario: 52195802
+24/02/2025 10:56:38 - Logeo Exitoso
+24/02/2025 10:56:43 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 10:56:55 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 11:06:13 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 11:06:20 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 11:06:25 - Error: Registro vencido
+24/02/2025 11:06:25 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 11:06:42 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 11:06:45 - Error: Registro vencido
+24/02/2025 11:06:45 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 11:07:10 - Intentando Confirmar Registro : tienda=1000, terminal=608,transaccion=6759, estado=271224
+24/02/2025 11:07:13 - Registro ya confirmado
+24/02/2025 11:09:45 - Intento de login con usuario: 52195802
+24/02/2025 11:09:46 - Logeo Exitoso
+24/02/2025 11:10:20 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 11:10:23 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 11:10:40 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 11:10:45 - Error: Registro vencido
+24/02/2025 11:10:45 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 11:16:15 - Intento de login con usuario: 52195802
+24/02/2025 11:16:15 - Logeo Exitoso
+24/02/2025 11:16:26 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 11:16:36 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 11:16:39 - Error: Registro vencido
+24/02/2025 11:16:39 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 11:17:35 - Intento de login con usuario: 52195802
+24/02/2025 11:17:36 - Logeo Exitoso
+24/02/2025 11:17:44 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 11:17:47 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 11:17:56 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 11:17:59 - Error: Registro vencido
+24/02/2025 11:17:59 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 11:19:39 - Intento de login con usuario: 52195802
+24/02/2025 11:19:39 - Logeo Exitoso
+24/02/2025 11:20:28 - Intento de login con usuario: 52195802
+24/02/2025 11:20:29 - Logeo Exitoso
+24/02/2025 11:20:37 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 11:21:02 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 11:21:06 - Error: Registro vencido
+24/02/2025 11:21:06 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 11:21:08 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 11:21:11 - Error: Registro vencido
+24/02/2025 11:21:11 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 11:22:42 - Intento de login con usuario: 52195802
+24/02/2025 11:22:42 - Logeo Exitoso
+24/02/2025 11:22:50 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 11:22:59 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 11:23:02 - Error: Registro vencido
+24/02/2025 11:23:02 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 11:23:05 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 11:23:08 - Error: Registro vencido
+24/02/2025 11:23:08 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 11:23:47 - Intento de login con usuario: 52195802
+24/02/2025 11:23:47 - Logeo Exitoso
+24/02/2025 11:23:55 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 11:24:00 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 11:24:04 - Error: Registro vencido
+24/02/2025 11:24:04 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 11:24:04 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 11:24:06 - Error: Registro vencido
+24/02/2025 11:24:06 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 11:28:01 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 11:28:26 - Filtro de datos: tienda=1010 - Interlomas, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 11:28:31 - Intentando Confirmar Registro : tienda=1010, terminal=24,transaccion=542, estado=240225
+24/02/2025 11:54:11 - Intentando Confirmar Registro : tienda=1010, terminal=24,transaccion=542, estado=240225
+24/02/2025 11:55:24 - Intentando Confirmar Registro : tienda=1010, terminal=24,transaccion=542, estado=240225
+24/02/2025 11:59:31 - Intentando Confirmar Registro : tienda=1010, terminal=24,transaccion=542, estado=240225
+24/02/2025 11:59:35 - Registro ya confirmado
+24/02/2025 11:59:58 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 12:00:08 - Intentando Confirmar Registro : tienda=1008, terminal=671,transaccion=246, estado=010225
+24/02/2025 12:00:12 - Error: Registro vencido
+24/02/2025 12:00:12 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 12:00:32 - Filtro de datos: tienda=1001 - Coyoacan, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 12:00:36 - Filtro de datos: tienda=1001 - Coyoacan, fecha=2025-02-01, estado=SIN CONFIRMAR
+24/02/2025 12:00:39 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-01, estado=SIN CONFIRMAR
+24/02/2025 12:00:43 - Filtro de datos: tienda=1002 - Durango, fecha=2025-02-01, estado=SIN CONFIRMAR
+24/02/2025 12:00:46 - Filtro de datos: tienda=1003 - Guadalajara, fecha=2025-02-01, estado=SIN CONFIRMAR
+24/02/2025 12:00:49 - Filtro de datos: tienda=1004 - Monterrey, fecha=2025-02-01, estado=SIN CONFIRMAR
+24/02/2025 12:00:52 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=SIN CONFIRMAR
+24/02/2025 12:00:55 - Filtro de datos: tienda=1007 - Puebla, fecha=2025-02-01, estado=SIN CONFIRMAR
+24/02/2025 12:01:02 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=SIN CONFIRMAR
+24/02/2025 12:01:14 - Filtro de datos: tienda=1012 - Queretaro, fecha=2025-02-24, estado=SIN CONFIRMAR
+24/02/2025 12:01:18 - Intentando Confirmar Registro : tienda=1012, terminal=633,transaccion=3586, estado=240225
+24/02/2025 12:01:21 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 12:05:46 - Intentando Confirmar Registro : tienda=1012, terminal=633,transaccion=3586, estado=240225
+24/02/2025 12:05:48 - Registro ya confirmado
+24/02/2025 12:09:13 - Intentando Confirmar Registro : tienda=1012, terminal=633,transaccion=3586, estado=240225
+24/02/2025 12:09:16 - Registro ya confirmado
+24/02/2025 12:49:50 - Filtro de datos: tienda=1012 - Queretaro, fecha=2025-02-24, estado=SIN CONFIRMAR
+24/02/2025 12:53:33 - Intentando Confirmar Registro : tienda=1012, terminal=37,transaccion=778, estado=240225
+24/02/2025 12:53:37 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 13:03:07 - Filtro de datos: tienda=1012 - Queretaro, fecha=2025-02-24, estado=SIN CONFIRMAR
+24/02/2025 13:10:56 - Intento de login con usuario: 52195802
+24/02/2025 13:10:57 - Logeo Exitoso
+24/02/2025 13:12:57 - Intento de login con usuario: 52195802
+24/02/2025 13:12:58 - Logeo Exitoso
+24/02/2025 13:13:20 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:13:25 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:13:25 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:13:26 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:13:26 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:13:26 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:13:26 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:13:27 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:13:27 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:13:27 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:13:31 - Filtro de datos: tienda=1010 - Interlomas, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:13:38 - Intentando Confirmar Registro : tienda=1010, terminal=201,transaccion=2554, estado=240225
+24/02/2025 13:13:44 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 13:14:08 - Filtro de datos: tienda=1010 - Interlomas, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:34:04 - Intento de login con usuario: 52195802
+24/02/2025 13:34:05 - Logeo Exitoso
+24/02/2025 13:44:09 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:45:56 - Filtro de datos: tienda=1540 - Nuevo Coyoacan, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 13:53:19 - Filtro de datos: tienda=1540 - Nuevo Coyoacan, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 14:12:36 - Intento de login con usuario: 52195802
+24/02/2025 14:12:37 - Logeo Exitoso
+24/02/2025 16:11:42 - Intento de login con usuario: 52195802
+24/02/2025 16:11:43 - Logeo Exitoso
+24/02/2025 16:12:04 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 16:12:32 - Filtro de datos: tienda=1003 - Guadalajara, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 16:12:57 - Intentando Confirmar Registro : tienda=1003, terminal=70,transaccion=245, estado=240225
+24/02/2025 16:13:01 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 16:13:48 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 16:13:54 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 16:13:56 - Error: Registro vencido
+24/02/2025 16:13:56 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 16:31:41 - Intento de login con usuario: 00078768
+24/02/2025 16:31:42 - Logeo Exitoso
+24/02/2025 16:32:15 - Filtro de datos: tienda=1003 - Guadalajara, fecha=2025-02-24, estado=SIN CONFIRMAR
+24/02/2025 16:40:26 - Intento de login con usuario: 52195802
+24/02/2025 16:40:27 - Logeo Exitoso
+24/02/2025 16:40:46 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 16:40:49 - Filtro de datos: tienda=1003 - Guadalajara, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 16:41:08 - Intentando Confirmar Registro : tienda=1003, terminal=15,transaccion=7417, estado=240225
+24/02/2025 16:41:15 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 16:41:58 - Intentando Confirmar Registro : tienda=1000, terminal=707,transaccion=1706, estado=261224
+24/02/2025 16:42:01 - Registro ya confirmado
+24/02/2025 16:42:18 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 16:42:23 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 16:42:25 - Error: Registro vencido
+24/02/2025 16:42:25 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 16:55:32 - Intento de login con usuario: 52195802
+24/02/2025 16:55:32 - Logeo Exitoso
+24/02/2025 17:10:39 - Filtro de datos: tienda=1000 - Centro, fecha=2025-02-24, estado=MOSTRAR TODO
+24/02/2025 17:17:11 - Intentando Confirmar Registro : tienda=1000, terminal=153,transaccion=4434, estado=240225
+24/02/2025 17:17:16 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+24/02/2025 17:18:04 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 17:18:23 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+24/02/2025 17:18:28 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+24/02/2025 17:18:30 - Error: Registro vencido
+24/02/2025 17:18:30 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
