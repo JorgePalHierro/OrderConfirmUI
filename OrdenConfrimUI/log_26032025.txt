@@ -1,0 +1,48 @@
+25/03/2025 10:10:23 - Intento de login con usuario: 52195802
+25/03/2025 10:10:23 - Logeo Exitoso
+26/03/2025 10:00:00 - Intento de login con usuario: 52195802
+26/03/2025 10:00:01 - Logeo Exitoso
+26/03/2025 10:08:40 - Intento de login con usuario: 52195802
+26/03/2025 10:08:41 - Logeo Exitoso
+26/03/2025 10:08:49 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-25, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 10:09:22 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-25, fechaFin=2025-03-25, estado=MOSTRAR TODO
+26/03/2025 10:09:28 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-24, fechaFin=2025-03-25, estado=MOSTRAR TODO
+26/03/2025 10:16:08 - Intento de login con usuario: 52195802
+26/03/2025 10:16:08 - Logeo Exitoso
+26/03/2025 10:16:12 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-26, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 10:16:16 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-25, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 10:28:22 - Intento de login con usuario: 52195802
+26/03/2025 10:28:23 - Logeo Exitoso
+26/03/2025 10:28:29 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-26, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 10:28:32 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-25, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 10:28:33 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-25, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 10:28:37 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-24, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 10:28:44 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-24, fechaFin=2025-03-25, estado=MOSTRAR TODO
+26/03/2025 10:28:45 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-24, fechaFin=2025-03-25, estado=MOSTRAR TODO
+26/03/2025 10:28:45 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-24, fechaFin=2025-03-25, estado=MOSTRAR TODO
+26/03/2025 10:29:36 - Intento de login con usuario: 52195802
+26/03/2025 10:29:37 - Logeo Exitoso
+26/03/2025 10:29:42 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-25, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 10:29:47 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-23, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 10:29:53 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-23, fechaFin=2025-03-24, estado=MOSTRAR TODO
+26/03/2025 10:37:12 - Intento de login con usuario: 52195802
+26/03/2025 10:37:13 - Logeo Exitoso
+26/03/2025 10:37:34 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-12, fechaFin=2025-03-10, estado=MOSTRAR TODO
+26/03/2025 10:37:41 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-05, fechaFin=2025-03-10, estado=MOSTRAR TODO
+26/03/2025 11:12:05 - Intento de login con usuario: 52195802
+26/03/2025 11:12:05 - Logeo Exitoso
+26/03/2025 11:12:14 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-26, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 11:12:18 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-25, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 11:12:55 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-20, fechaFin=2025-03-25, estado=MOSTRAR TODO
+26/03/2025 12:42:56 - Intento de login con usuario: 52195802
+26/03/2025 12:42:57 - Logeo Exitoso
+26/03/2025 12:43:03 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-26, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 12:43:05 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-26, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 12:43:43 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-26, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 12:43:44 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-26, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 12:43:44 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-26, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 12:43:52 - Filtro de datos: tienda=1008 - Santa Fe, fechaInicio=2025-03-26, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 12:43:57 - Intentando Confirmar Registro : tienda=1008, terminal=680,transaccion=7370, estado=260325
+26/03/2025 12:44:04 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+26/03/2025 13:36:39 - Filtro de datos: tienda=1008 - Santa Fe, fechaInicio=2025-03-26, fechaFin=2025-03-26, estado=MOSTRAR TODO
+26/03/2025 13:36:45 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-26, fechaFin=2025-03-26, estado=MOSTRAR TODO

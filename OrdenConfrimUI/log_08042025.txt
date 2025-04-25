@@ -1,0 +1,2 @@
+08/04/2025 09:59:13 - Intento de login con usuario: 52195802
+08/04/2025 09:59:13 - Logeo Exitoso

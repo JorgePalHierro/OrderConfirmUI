@@ -6,13 +6,28 @@ import java.io.Serializable;
 @Embeddable
 public class ConfirmacionOrdenId implements Serializable {
 
-    private String tienda;
+    public ConfirmacionOrdenId() {
+		super();
+	}
+
+	public ConfirmacionOrdenId(String tienda, String terminal, String transaccion, String fecha, String numeroOrden) {
+		super();
+		this.tienda = tienda;
+		this.terminal = terminal;
+		this.transaccion = transaccion;
+		this.fecha = fecha;
+		this.numeroOrden = numeroOrden;
+	}
+
+	private String tienda;
     private String terminal;
     private String transaccion;
     private String fecha;
     private String numeroOrden;
 
-    // Getters y setters
+   
+
+	// Getters y setters
     public String getTienda() {
         return tienda;
     }

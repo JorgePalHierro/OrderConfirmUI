@@ -1,0 +1,26 @@
+03/03/2025 10:29:07 - Intento de login con usuario: 52195802
+03/03/2025 10:29:07 - Logeo Exitoso
+03/03/2025 11:22:51 - Intento de login con usuario: 52195802
+03/03/2025 11:22:51 - Logeo Exitoso
+03/03/2025 12:43:27 - Intento de login con usuario: 52195802
+03/03/2025 12:43:28 - Logeo Exitoso
+03/03/2025 12:43:38 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-03, estado=MOSTRAR TODO
+03/03/2025 15:34:45 - Intento de login con usuario: 52195802
+03/03/2025 15:34:46 - Logeo Exitoso
+03/03/2025 15:34:59 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-03, estado=MOSTRAR TODO
+03/03/2025 15:36:33 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-03, estado=SIN CONFIRMAR
+03/03/2025 15:36:38 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-03, estado=CONFIRMADO
+03/03/2025 15:36:41 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-03, estado=MOSTRAR TODO
+03/03/2025 15:37:10 - Intentando Confirmar Registro : tienda=1000, terminal=114,transaccion=1419, estado=030325
+03/03/2025 15:37:14 - Registro ya confirmado
+03/03/2025 15:37:26 - Intentando Confirmar Registro : tienda=1000, terminal=608,transaccion=7812, estado=030325
+03/03/2025 15:37:28 - Registro ya confirmado
+03/03/2025 15:37:41 - Filtro de datos: tienda=1003 - Guadalajara, fecha=2025-03-03, estado=MOSTRAR TODO
+03/03/2025 15:37:56 - Intentando Confirmar Registro : tienda=1003, terminal=154,transaccion=4748, estado=030325
+03/03/2025 15:37:59 - Registro ya confirmado
+03/03/2025 15:38:17 - Intentando Confirmar Registro : tienda=1003, terminal=614,transaccion=2721, estado=030325
+03/03/2025 15:38:20 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+03/03/2025 15:39:45 - Intentando Confirmar Registro : tienda=1003, terminal=27,transaccion=3556, estado=030325
+03/03/2025 15:39:56 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+03/03/2025 15:42:15 - Intentando Confirmar Registro : tienda=1003, terminal=70,transaccion=524, estado=030325
+03/03/2025 15:42:18 - Registro ya confirmado

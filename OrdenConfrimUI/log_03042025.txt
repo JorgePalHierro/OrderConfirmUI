@@ -1,0 +1,113 @@
+03/04/2025 08:35:10 - Intento de login con usuario: 52195802
+03/04/2025 08:35:10 - Logeo Exitoso
+03/04/2025 08:36:04 - Intento de login con usuario: 52195802
+03/04/2025 08:36:05 - Logeo Exitoso
+03/04/2025 08:36:35 - Intento de login con usuario: 52195802
+03/04/2025 08:36:35 - Logeo Exitoso
+03/04/2025 08:40:25 - Intento de login con usuario: 52195802
+03/04/2025 08:40:26 - Logeo Exitoso
+03/04/2025 08:41:53 - Intento de login con usuario: 52195802
+03/04/2025 08:41:54 - Logeo Exitoso
+03/04/2025 08:42:32 - Intento de login con usuario: 52195802
+03/04/2025 08:42:33 - Logeo Exitoso
+03/04/2025 08:43:03 - Intento de login con usuario: 52195802
+03/04/2025 08:43:04 - Logeo Exitoso
+03/04/2025 08:45:53 - Intento de login con usuario: 52195802
+03/04/2025 08:45:53 - Logeo Exitoso
+03/04/2025 08:46:04 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-04-03, fechaFin=2025-04-03, estado=MOSTRAR TODO
+03/04/2025 08:46:09 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-04-02, fechaFin=2025-04-03, estado=MOSTRAR TODO
+03/04/2025 08:47:14 - Intento de login con usuario: 52195802
+03/04/2025 08:47:14 - Logeo Exitoso
+03/04/2025 08:49:31 - Intento de login con usuario: 52195802
+03/04/2025 08:49:32 - Logeo Exitoso
+03/04/2025 08:50:19 - Intento de login con usuario: 52195802
+03/04/2025 08:50:20 - Logeo Exitoso
+03/04/2025 08:51:24 - Intento de login con usuario: 52195802
+03/04/2025 08:51:24 - Logeo Exitoso
+03/04/2025 08:52:52 - Intento de login con usuario: 52195802
+03/04/2025 08:52:53 - Logeo Exitoso
+03/04/2025 08:53:27 - Intento de login con usuario: 52195802
+03/04/2025 08:53:28 - Logeo Exitoso
+03/04/2025 08:53:54 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-04-02, fechaFin=2025-04-03, estado=MOSTRAR TODO
+03/04/2025 08:54:36 - Intento de login con usuario: 52195802
+03/04/2025 08:54:36 - Logeo Exitoso
+03/04/2025 08:55:08 - Intento de login con usuario: 52195802
+03/04/2025 08:55:08 - Logeo Exitoso
+03/04/2025 08:55:42 - Intento de login con usuario: 52195802
+03/04/2025 08:55:42 - Logeo Exitoso
+03/04/2025 08:56:11 - Intento de login con usuario: 52195802
+03/04/2025 08:56:12 - Logeo Exitoso
+03/04/2025 08:58:26 - Intento de login con usuario: 52195802
+03/04/2025 08:58:26 - Logeo Exitoso
+03/04/2025 08:59:02 - Intento de login con usuario: 52195802
+03/04/2025 08:59:03 - Logeo Exitoso
+03/04/2025 08:59:46 - Intento de login con usuario: 52195802
+03/04/2025 08:59:46 - Logeo Exitoso
+03/04/2025 09:03:36 - Intento de login con usuario: 52195802
+03/04/2025 09:03:36 - Logeo Exitoso
+03/04/2025 09:03:59 - Intento de login con usuario: 52195802
+03/04/2025 09:04:00 - Logeo Exitoso
+03/04/2025 09:26:24 - Intento de login con usuario: 52195802
+03/04/2025 09:26:25 - Logeo Exitoso
+03/04/2025 09:51:18 - Intento de login con usuario: 52195802
+03/04/2025 09:51:18 - Logeo Exitoso
+03/04/2025 10:00:50 - Intento de login con usuario: 52195802
+03/04/2025 10:00:50 - Logeo Exitoso
+03/04/2025 10:01:45 - Intento de login con usuario: 52195802
+03/04/2025 10:01:46 - Logeo Exitoso
+03/04/2025 10:02:43 - Intento de login con usuario: 52195802
+03/04/2025 10:02:43 - Logeo Exitoso
+03/04/2025 10:10:11 - Intento de login con usuario: 52195802
+03/04/2025 10:10:11 - Logeo Exitoso
+03/04/2025 10:15:25 - Intento de login con usuario: 52195802
+03/04/2025 10:15:25 - Logeo Exitoso
+03/04/2025 10:17:00 - Intento de login con usuario: 52195802
+03/04/2025 10:17:00 - Logeo Exitoso
+03/04/2025 10:21:01 - Intento de login con usuario: 52195802
+03/04/2025 10:21:01 - Logeo Exitoso
+03/04/2025 10:21:51 - Intento de login con usuario: 52195802
+03/04/2025 10:21:52 - Logeo Exitoso
+03/04/2025 10:23:48 - Intento de login con usuario: 52195802
+03/04/2025 10:23:49 - Logeo Exitoso
+03/04/2025 10:25:08 - Intento de login con usuario: 52195802
+03/04/2025 10:25:09 - Logeo Exitoso
+03/04/2025 10:30:03 - Intento de login con usuario: 52195802
+03/04/2025 10:30:05 - Logeo Exitoso
+03/04/2025 10:38:04 - Intento de login con usuario: 52195802
+03/04/2025 10:38:05 - Logeo Exitoso
+03/04/2025 10:39:59 - Intento de login con usuario: 52195802
+03/04/2025 10:40:00 - Logeo Exitoso
+03/04/2025 10:41:34 - Intento de login con usuario: 52195802
+03/04/2025 10:41:35 - Logeo Exitoso
+03/04/2025 10:45:37 - Intento de login con usuario: 52195802
+03/04/2025 10:45:38 - Logeo Exitoso
+03/04/2025 10:46:38 - Intento de login con usuario: 52195802
+03/04/2025 10:46:38 - Logeo Exitoso
+03/04/2025 10:47:03 - Intento de login con usuario: 52195802
+03/04/2025 10:47:03 - Logeo Exitoso
+03/04/2025 10:47:23 - Intento de login con usuario: 52195802
+03/04/2025 10:47:23 - Logeo Exitoso
+03/04/2025 10:49:06 - Intento de login con usuario: 52195802
+03/04/2025 10:49:07 - Logeo Exitoso
+03/04/2025 10:50:43 - Intento de login con usuario: 52195802
+03/04/2025 10:50:44 - Logeo Exitoso
+03/04/2025 10:51:49 - Intento de login con usuario: 52195802
+03/04/2025 10:51:50 - Logeo Exitoso
+03/04/2025 10:53:02 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-04-03, fechaFin=2025-04-03, estado=MOSTRAR TODO
+03/04/2025 10:53:07 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-04-02, fechaFin=2025-04-03, estado=MOSTRAR TODO
+03/04/2025 10:53:37 - Intento de login con usuario: 52195802
+03/04/2025 10:53:37 - Logeo Exitoso
+03/04/2025 10:56:14 - Intento de login con usuario: 52195802
+03/04/2025 10:56:15 - Logeo Exitoso
+03/04/2025 11:54:00 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-04-02, fechaFin=2025-04-03, estado=MOSTRAR TODO
+03/04/2025 11:58:33 - Intento de login con usuario: 52195802
+03/04/2025 11:58:33 - Logeo Exitoso
+03/04/2025 11:59:32 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-04-02, fechaFin=2025-04-03, estado=MOSTRAR TODO
+03/04/2025 13:06:05 - Intento de login con usuario: 52195802
+03/04/2025 13:06:05 - Logeo Exitoso
+03/04/2025 13:46:44 - Intento de login con usuario: 52195802
+03/04/2025 13:46:45 - Logeo Exitoso
+03/04/2025 15:50:02 - Intento de login con usuario: 52195802
+03/04/2025 15:50:03 - Logeo Exitoso
+03/04/2025 17:31:25 - Intento de login con usuario: 52195802
+03/04/2025 17:31:25 - Logeo Exitoso

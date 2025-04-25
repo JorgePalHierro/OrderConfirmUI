@@ -1,0 +1,7 @@
+20/03/2025 09:42:09 - Intento de login con usuario: 52195802
+20/03/2025 09:42:10 - Logeo Exitoso
+20/03/2025 09:42:20 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-20, estado=MOSTRAR TODO
+20/03/2025 09:42:22 - Filtro de datos: tienda=1014 - Leon, fecha=2025-03-20, estado=MOSTRAR TODO
+20/03/2025 09:42:29 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-19, estado=MOSTRAR TODO
+20/03/2025 10:16:41 - Intento de login con usuario: 52195802
+20/03/2025 10:16:42 - Logeo Exitoso

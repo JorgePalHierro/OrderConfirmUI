@@ -1,0 +1,59 @@
+04/03/2025 10:45:41 - Intento de login con usuario: 52195802
+04/03/2025 10:45:41 - Logeo Exitoso
+04/03/2025 10:45:46 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-04, estado=MOSTRAR TODO
+04/03/2025 10:45:47 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-04, estado=MOSTRAR TODO
+04/03/2025 10:45:52 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-03, estado=MOSTRAR TODO
+04/03/2025 11:13:59 - Intento de login con usuario: 52195802
+04/03/2025 11:13:59 - Logeo Exitoso
+04/03/2025 11:33:19 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-03, estado=MOSTRAR TODO
+04/03/2025 11:42:00 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-03-04, estado=MOSTRAR TODO
+04/03/2025 11:42:08 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-03-04, estado=MOSTRAR TODO
+04/03/2025 11:42:51 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-03-04, estado=MOSTRAR TODO
+04/03/2025 11:48:06 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-03-04, estado=MOSTRAR TODO
+04/03/2025 11:48:14 - Intentando Confirmar Registro : tienda=1008, terminal=8,transaccion=5714, estado=040325
+04/03/2025 11:48:19 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+04/03/2025 12:03:41 - Intento de login con usuario: 52195802
+04/03/2025 12:03:42 - Logeo Exitoso
+04/03/2025 12:12:06 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-04, estado=MOSTRAR TODO
+04/03/2025 12:12:11 - Intentando Confirmar Registro : tienda=1000, terminal=107,transaccion=6346, estado=040325
+04/03/2025 12:12:16 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+04/03/2025 12:13:58 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-04, estado=MOSTRAR TODO
+04/03/2025 12:14:08 - Intentando Confirmar Registro : tienda=1000, terminal=107,transaccion=6346, estado=040325
+04/03/2025 12:14:13 - Registro ya confirmado
+04/03/2025 12:14:23 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-03-04, estado=MOSTRAR TODO
+04/03/2025 12:14:27 - Intentando Confirmar Registro : tienda=1008, terminal=241,transaccion=7280, estado=040325
+04/03/2025 12:14:31 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+04/03/2025 12:14:40 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-03-04, estado=MOSTRAR TODO
+04/03/2025 12:36:26 - Intento de login con usuario: 52195802
+04/03/2025 12:36:27 - Logeo Exitoso
+04/03/2025 12:36:36 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-03-04, estado=MOSTRAR TODO
+04/03/2025 12:36:41 - Intentando Confirmar Registro : tienda=1008, terminal=241,transaccion=7280, estado=040325
+04/03/2025 12:36:44 - Registro ya confirmado
+04/03/2025 12:36:50 - Intentando Confirmar Registro : tienda=1008, terminal=8,transaccion=5715, estado=040325
+04/03/2025 12:36:52 - Registro ya confirmado
+04/03/2025 12:36:55 - Intentando Confirmar Registro : tienda=1008, terminal=8,transaccion=5716, estado=040325
+04/03/2025 12:36:57 - Registro ya confirmado
+04/03/2025 12:37:12 - Filtro de datos: tienda=1003 - Guadalajara, fecha=2025-03-04, estado=MOSTRAR TODO
+04/03/2025 12:37:16 - Intentando Confirmar Registro : tienda=1003, terminal=204,transaccion=7151, estado=040325
+04/03/2025 12:37:20 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+04/03/2025 12:40:44 - Filtro de datos: tienda=1003 - Guadalajara, fecha=2025-03-04, estado=MOSTRAR TODO
+04/03/2025 12:40:48 - Filtro de datos: tienda=1003 - Guadalajara, fecha=2025-03-04, estado=SIN CONFIRMAR
+04/03/2025 12:40:55 - Intentando Confirmar Registro : tienda=1003, terminal=204,transaccion=7151, estado=040325
+04/03/2025 12:40:58 - Registro ya confirmado
+04/03/2025 12:41:02 - Intentando Confirmar Registro : tienda=1003, terminal=21,transaccion=4856, estado=040325
+04/03/2025 12:41:04 - Registro ya confirmado
+04/03/2025 12:41:07 - Intentando Confirmar Registro : tienda=1003, terminal=21,transaccion=4858, estado=040325
+04/03/2025 12:41:09 - Registro ya confirmado
+04/03/2025 12:41:13 - Intentando Confirmar Registro : tienda=1003, terminal=58,transaccion=73, estado=040325
+04/03/2025 12:41:16 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+04/03/2025 12:49:44 - Filtro de datos: tienda=1014 - Leon, fecha=2025-03-04, estado=SIN CONFIRMAR
+04/03/2025 12:49:46 - Filtro de datos: tienda=1014 - Leon, fecha=2025-03-04, estado=SIN CONFIRMAR
+04/03/2025 12:49:53 - Intentando Confirmar Registro : tienda=1014, terminal=154,transaccion=818, estado=040325
+04/03/2025 12:49:59 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+04/03/2025 12:51:42 - Intentando Confirmar Registro : tienda=1014, terminal=155,transaccion=2064, estado=040325
+04/03/2025 12:51:49 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+04/03/2025 12:53:54 - Intentando Confirmar Registro : tienda=1014, terminal=97,transaccion=3378, estado=040325
+04/03/2025 12:53:59 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+04/03/2025 12:54:09 - Filtro de datos: tienda=1014 - Leon, fecha=2025-03-04, estado=SIN CONFIRMAR
+04/03/2025 12:54:14 - Intentando Confirmar Registro : tienda=1014, terminal=154,transaccion=818, estado=040325
+04/03/2025 12:54:17 - Registro ya confirmado

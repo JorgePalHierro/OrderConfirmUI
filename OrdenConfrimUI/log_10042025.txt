@@ -1,0 +1,5 @@
+10/04/2025 17:15:54 - Intento de login con usuario: 52195802
+10/04/2025 17:15:55 - Logeo Exitoso
+10/04/2025 18:03:10 - Intento de login con usuario: 52195802
+10/04/2025 18:03:11 - Logeo Exitoso
+10/04/2025 18:03:26 - Filtro de datos: tienda=1004 - Monterrey, fechaInicio=2025-04-08, fechaFin=2025-04-08, estado=MOSTRAR TODO

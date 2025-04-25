@@ -1,0 +1,8 @@
+04/04/2025 08:51:56 - Intento de login con usuario: 52195802
+04/04/2025 08:51:56 - Logeo Exitoso
+04/04/2025 10:01:25 - Intento de login con usuario: 52195802
+04/04/2025 10:01:26 - Logeo Exitoso
+04/04/2025 13:03:18 - Intento de login con usuario: 0064662
+04/04/2025 13:03:19 - Error de login: Usuario o contraseña incorrectos
+04/04/2025 13:04:07 - Intento de login con usuario: 00064662
+04/04/2025 13:04:07 - Logeo Exitoso

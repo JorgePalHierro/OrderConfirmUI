@@ -1,0 +1,50 @@
+07/04/2025 10:41:42 - Intento de login con usuario: 00064662
+07/04/2025 10:41:43 - Logeo Exitoso
+07/04/2025 11:28:52 - Intento de login con usuario: 00064662
+07/04/2025 11:28:53 - Logeo Exitoso
+07/04/2025 12:10:17 - Intento de login con usuario: 00064662
+07/04/2025 12:10:18 - Logeo Exitoso
+07/04/2025 12:12:04 - Intento de login con usuario: 00064662
+07/04/2025 12:12:05 - Logeo Exitoso
+07/04/2025 12:13:57 - Intento de login con usuario: 00064662
+07/04/2025 12:13:58 - Logeo Exitoso
+07/04/2025 12:15:13 - Intento de login con usuario: 00064662
+07/04/2025 12:15:13 - Logeo Exitoso
+07/04/2025 12:15:32 - Intento de login con usuario: 52195802
+07/04/2025 12:15:32 - Logeo Exitoso
+07/04/2025 12:16:27 - Intento de login con usuario: 52195802
+07/04/2025 12:16:28 - Logeo Exitoso
+07/04/2025 12:16:58 - Intento de login con usuario: 52195802
+07/04/2025 12:16:58 - Logeo Exitoso
+07/04/2025 12:17:20 - Intento de login con usuario: 52195802
+07/04/2025 12:17:20 - Logeo Exitoso
+07/04/2025 12:32:53 - Intento de login con usuario: 52195802
+07/04/2025 12:32:53 - Logeo Exitoso
+07/04/2025 12:34:39 - Intento de login con usuario: 52195802
+07/04/2025 12:34:40 - Logeo Exitoso
+07/04/2025 12:35:43 - Intento de login con usuario: 52195802
+07/04/2025 12:35:43 - Logeo Exitoso
+07/04/2025 12:36:46 - Intento de login con usuario: 52195802
+07/04/2025 12:36:46 - Logeo Exitoso
+07/04/2025 12:36:57 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-04-06, fechaFin=2025-04-07, estado=SIN CONFIRMAR
+07/04/2025 12:37:04 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-04-05, fechaFin=2025-04-07, estado=SIN CONFIRMAR
+07/04/2025 12:37:12 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-04-05, fechaFin=2025-04-05, estado=SIN CONFIRMAR
+07/04/2025 12:37:13 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-04-05, fechaFin=2025-04-05, estado=SIN CONFIRMAR
+07/04/2025 12:37:20 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-04-05, fechaFin=2025-04-05, estado=MOSTRAR TODO
+07/04/2025 12:45:37 - Intento de login con usuario: 52195802
+07/04/2025 12:45:38 - Logeo Exitoso
+07/04/2025 12:51:20 - Intento de login con usuario: 52195802
+07/04/2025 12:51:20 - Logeo Exitoso
+07/04/2025 12:58:17 - Intento de login con usuario: 52195802
+07/04/2025 12:58:17 - Logeo Exitoso
+07/04/2025 13:00:14 - Intento de login con usuario: 52195802
+07/04/2025 13:00:15 - Logeo Exitoso
+07/04/2025 13:00:52 - Intento de login con usuario: 52195802
+07/04/2025 13:00:53 - Logeo Exitoso
+07/04/2025 13:01:39 - Intento de login con usuario: 52195802
+07/04/2025 13:01:39 - Logeo Exitoso
+07/04/2025 13:01:55 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-04-06, fechaFin=2025-04-06, estado=MOSTRAR TODO
+07/04/2025 13:09:35 - Intento de login con usuario: 52195802
+07/04/2025 13:09:35 - Logeo Exitoso
+07/04/2025 14:58:30 - Intento de login con usuario: 52195802
+07/04/2025 14:58:30 - Logeo Exitoso

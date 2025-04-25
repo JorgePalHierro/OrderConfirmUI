@@ -4,6 +4,7 @@ import jakarta.persistence.*; // Para JPA 3.1+ usa jakarta en lugar de javax
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.sql.Timestamp;
 
 @Entity
 @Table(name = "CONFIRMACION_ORDEN")
@@ -11,10 +12,10 @@ import java.text.SimpleDateFormat;
 public class ConfirmacionOrden {
 
 	@Column(name = "CONSECUTIVO")
-	private String consecutivo;
+	private long consecutivo;
 	
 	@Column(name = "CONFIRMACION")
-	private String confirmacion; // NUMBER en DB se mapea como Long o BigDecimal
+	private long confirmacion; // NUMBER en DB se mapea como Long o BigDecimal
 
 	@Column(name = "CODIGORESPUESTA", length = 255) // VARCHAR2
 	private String codigoRespuesta;
@@ -32,13 +33,13 @@ public class ConfirmacionOrden {
 	private String vendedor;
 
 	@Column(name = "IMPORTE", length = 255) // VARCHAR2
-	private String importe;
+	private long importe;
 
 	@Column(name = "NUMTARJETA", length = 255) // VARCHAR2
 	private String numTarjeta;
 
 	@Column(name = "TIPO", length = 255) // VARCHAR2
-	private String tipo;
+	private long tipo;
 	@Id
 	@Column(name = "NUMEROORDEN", length = 255) // VARCHAR2
 	private String numeroOrden;
@@ -53,23 +54,34 @@ public class ConfirmacionOrden {
 	private String tienda;
 
 	@Column(name = "FECHACOMPLETA", length = 255) // VARCHAR2
-	private String fechacompleta;
+	private Timestamp fechacompleta;
+	
+	@Column(name = "STATUS", length = 255) // VARCHAR2
+	private String status;
 
 	// Getters y Setters
-	public String getConfirmacion() {
+	public long getConfirmacion() {
 		return confirmacion;
 	}
 
-	public void setConfirmacion(String confirmacion) {
+	public void setConfirmacion(long confirmacion) {
 		this.confirmacion = confirmacion;
 	}
-
-	public String getFechaCompleta() {
-		return fechacompleta;
+	
+	public String getStatus() {
+		return status;
 	}
 
-	public void setFechaCompleta(String fechacompleta) {
-		this.fechacompleta = fechacompleta;
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public Timestamp getFechaCompleta() {
+		return fechacompleta;
+	} 
+
+	public void setFechaCompleta(Timestamp timestamp) {
+		this.fechacompleta = timestamp;
 	}
 
 	public String getCodigoRespuesta() {
@@ -104,11 +116,11 @@ public class ConfirmacionOrden {
 		this.vendedor = vendedor;
 	}
 
-	public String getImporte() {
+	public long getImporte() {
 		return importe;
 	}
 
-	public void setImporte(String importe) {
+	public void setImporte(long importe) {
 		this.importe = importe;
 	}
 
@@ -120,11 +132,11 @@ public class ConfirmacionOrden {
 		this.numTarjeta = numTarjeta;
 	}
 
-	public String getTipo() {
+	public long getTipo() {
 		return tipo;
 	}
 
-	public void setTipo(String tipo) {
+	public void setTipo(long tipo) {
 		this.tipo = tipo;
 	}
 
@@ -168,11 +180,11 @@ public class ConfirmacionOrden {
 		this.fecha = fecha;
 	}
 	
-	public String getConsecutivo() {
+	public long getConsecutivo() {
 		return consecutivo;
 	}
 
-	public void setConsecutivo(String consecutivo) {
+	public void setConsecutivo(long consecutivo) {
 		this.consecutivo = consecutivo;		
 	}
 
@@ -182,15 +194,15 @@ public class ConfirmacionOrden {
 		confirmacionOrden.setNumAutorizacion(dto.getNumeroAutorizacion());
 		confirmacionOrden.setEsquema(dto.getEsquema());
 		confirmacionOrden.setVendedor(dto.getVendedor());
-		confirmacionOrden.setImporte(dto.getImporte());
+		confirmacionOrden.setImporte(Long.valueOf(dto.getImporte()));
 		confirmacionOrden.setNumTarjeta(dto.getNumeroTarjeta());
-		confirmacionOrden.setTipo(dto.getTipo());
+		confirmacionOrden.setTipo(Long.valueOf(dto.getTipo()));
 		confirmacionOrden.setNumeroOrden(dto.getNumeroOrden());
 		confirmacionOrden.setTransaccion(dto.getTransaccion());
 		confirmacionOrden.setTerminal(dto.getTerminal());
 		confirmacionOrden.setTienda(dto.getTienda());
 		confirmacionOrden.setFecha(dto.getFecha());
-		confirmacionOrden.setFechaCompleta("15-11-2024");
+		confirmacionOrden.setFechaCompleta(new Timestamp(System.currentTimeMillis()));
 
 		return confirmacionOrden;
 	}

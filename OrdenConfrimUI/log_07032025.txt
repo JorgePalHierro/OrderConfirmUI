@@ -1,0 +1,18 @@
+07/03/2025 12:05:16 - Intento de login con usuario: 52195802
+07/03/2025 12:05:18 - Logeo Exitoso
+07/03/2025 12:06:29 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-07, estado=MOSTRAR TODO
+07/03/2025 12:06:39 - Filtro de datos: tienda=1010 - Interlomas, fecha=2025-03-07, estado=MOSTRAR TODO
+07/03/2025 12:06:46 - Filtro de datos: tienda=1010 - Interlomas, fecha=2025-03-06, estado=MOSTRAR TODO
+07/03/2025 12:09:03 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-07, estado=MOSTRAR TODO
+07/03/2025 12:09:08 - Filtro de datos: tienda=1010 - Interlomas, fecha=2025-03-07, estado=MOSTRAR TODO
+07/03/2025 12:09:47 - Intentando Confirmar Registro : tienda=1010, terminal=15,transaccion=5360, estado=070325
+07/03/2025 12:09:52 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+07/03/2025 12:10:37 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+07/03/2025 12:10:47 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+07/03/2025 12:10:50 - Error: Registro vencido
+07/03/2025 12:14:10 - Filtro de datos: tienda=1001 - Coyoacan, fecha=2025-02-01, estado=MOSTRAR TODO
+07/03/2025 12:14:17 - Filtro de datos: tienda=1001 - Coyoacan, fecha=2025-03-07, estado=MOSTRAR TODO
+07/03/2025 12:14:22 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-07, estado=MOSTRAR TODO
+07/03/2025 12:14:25 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-06, estado=MOSTRAR TODO
+07/03/2025 12:19:47 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-07, estado=MOSTRAR TODO
+07/03/2025 12:19:51 - Filtro de datos: tienda=1002 - Durango, fecha=2025-03-07, estado=MOSTRAR TODO

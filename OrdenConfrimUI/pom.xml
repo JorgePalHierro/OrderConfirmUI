@@ -10,8 +10,8 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>OrdenConfrimUI</artifactId>
-	<version>0.1.0</version>
+	<artifactId>OrdenConfrimUIhttps</artifactId>
+	<version>0.1.2</version>
 	<packaging>war</packaging>
 	<name>OrdenConfrimUI</name>
 	<description>Demo project for Spring Boot</description>
@@ -57,6 +57,14 @@
 			<artifactId>ojdbc11</artifactId>
 			<version>23.2.0.0</version>
 		</dependency>
+		
+		
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>19.3.0.0</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>com.squareup.okhttp3</groupId>

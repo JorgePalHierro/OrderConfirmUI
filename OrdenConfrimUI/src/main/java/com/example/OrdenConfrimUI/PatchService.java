@@ -42,7 +42,7 @@ public class PatchService {
 		//Optional<OnlinePosHeader> allPosHeader = posHeaderService.findByParams(tienda, terminal, transaccion, fecha);
 		//Optional<OnlinePosPagos> allPosPagos = posPagosService.findByParams(tienda, terminal, transaccion, fecha);
 
-		transacciones = confirmacionOrdenRepository.findByConsecutivoAndNumeroOrden("999", numero_orden);
+		transacciones = confirmacionOrdenRepository.findByConsecutivoAndNumeroOrden(Long.parseLong("999"), numero_orden);
 
 		String ticket = tienda + terminal + transaccion + fecha;
 		ticket = numeroVerificador(ticket);
@@ -56,16 +56,16 @@ public class PatchService {
 
 				//OnlinePosPagos pagos = allPosPagos.get();
 				//OnlinePosHeader header = allPosHeader.get();
-				registro.setTipo(tablaConversion(registro.getTipo()));
+				
 
 				// JSON request body
-				double amounTender = Double.parseDouble(registro.getImporte()) / 100;
+				double amounTender = registro.getImporte()/ 100;
 				System.out.println("Importe: " + amounTender);
 
 				// JSON request body
 				String json = "{\n" + "  \"amount\": " + amounTender + ",\n"
 						+ "  \"payment_method_id\": \"PAY_IN_STORE\",\n" + "  \"c_paymentType\": \"" 
-						+ registro.getTipo() + "\",\n" + "  \"payment_card\": {\n"
+						+ tablaConversion(String.valueOf(registro.getTipo())) + "\",\n" + "  \"payment_card\": {\n"
 						+ "    \"card_type\": \"" + registro.getTipo() + "\",\n" + "    \"number\": \"" 
 						+ registro.getNumTarjeta() + "\",\n" + "    \"holder\": \"VENTA ASISTIDA\"\n" + "  },\n"
 						+ "  \"c_AS_palacioStoreID\": \"" + tienda + "\",\n" + "  \"c_AS_employeeId\": \"" 

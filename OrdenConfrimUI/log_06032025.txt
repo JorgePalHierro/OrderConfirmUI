@@ -1,0 +1,65 @@
+06/03/2025 10:39:46 - Intento de login con usuario: 52195802
+06/03/2025 10:39:47 - Logeo Exitoso
+06/03/2025 10:40:43 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 10:41:11 - Filtro de datos: tienda=1004 - Monterrey, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 10:41:14 - Intentando Confirmar Registro : tienda=1004, terminal=194,transaccion=1832, estado=060325
+06/03/2025 10:41:21 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 10:59:34 - Intento de login con usuario: 52195802
+06/03/2025 10:59:34 - Logeo Exitoso
+06/03/2025 10:59:40 - Filtro de datos: tienda=1004 - Monterrey, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 10:59:46 - Intentando Confirmar Registro : tienda=1004, terminal=75,transaccion=7939, estado=060325
+06/03/2025 10:59:51 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 11:27:53 - Filtro de datos: tienda=1005 - Perisur, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 11:27:58 - Intentando Confirmar Registro : tienda=1005, terminal=603,transaccion=2403, estado=060325
+06/03/2025 11:28:03 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 12:29:24 - Intento de login con usuario: 52195802
+06/03/2025 12:29:25 - Logeo Exitoso
+06/03/2025 12:29:31 - Filtro de datos: tienda=1005 - Perisur, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 12:29:46 - Intentando Confirmar Registro : tienda=1005, terminal=646,transaccion=6030, estado=060325
+06/03/2025 12:29:50 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 12:30:59 - Filtro de datos: tienda=1540 - Nuevo Coyoacan, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 12:31:04 - Intentando Confirmar Registro : tienda=1540, terminal=7,transaccion=8385, estado=060325
+06/03/2025 12:31:09 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 12:34:00 - Intentando Confirmar Registro : tienda=1540, terminal=80,transaccion=1979, estado=060325
+06/03/2025 12:34:06 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 12:40:14 - Filtro de datos: tienda=1002 - Durango, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 12:40:23 - Intentando Confirmar Registro : tienda=1002, terminal=140,transaccion=252, estado=060325
+06/03/2025 12:40:27 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 12:42:58 - Filtro de datos: tienda=1540 - Nuevo Coyoacan, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 12:43:11 - Intentando Confirmar Registro : tienda=1540, terminal=114,transaccion=5446, estado=060325
+06/03/2025 12:43:15 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 13:11:19 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 13:11:33 - Intentando Confirmar Registro : tienda=1008, terminal=109,transaccion=2551, estado=060325
+06/03/2025 13:11:38 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 13:14:09 - Intentando Confirmar Registro : tienda=1008, terminal=232,transaccion=6739, estado=060325
+06/03/2025 13:14:13 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 13:15:44 - Filtro de datos: tienda=1540 - Nuevo Coyoacan, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 13:15:49 - Intentando Confirmar Registro : tienda=1540, terminal=114,transaccion=5446, estado=060325
+06/03/2025 13:15:52 - Registro ya confirmado
+06/03/2025 13:16:11 - Filtro de datos: tienda=1003 - Guadalajara, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 13:16:19 - Intentando Confirmar Registro : tienda=1003, terminal=154,transaccion=4897, estado=060325
+06/03/2025 13:16:22 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 13:22:57 - Filtro de datos: tienda=1002 - Durango, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 13:23:05 - Intentando Confirmar Registro : tienda=1002, terminal=140,transaccion=253, estado=060325
+06/03/2025 13:23:11 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 16:01:57 - Intento de login con usuario: 52195802
+06/03/2025 16:01:58 - Logeo Exitoso
+06/03/2025 16:02:03 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 16:02:09 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-03-06, estado=SIN CONFIRMAR
+06/03/2025 16:02:18 - Intentando Confirmar Registro : tienda=1008, terminal=680,transaccion=7064, estado=060325
+06/03/2025 16:02:23 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 16:04:37 - Filtro de datos: tienda=1005 - Perisur, fecha=2025-03-06, estado=SIN CONFIRMAR
+06/03/2025 16:04:41 - Intentando Confirmar Registro : tienda=1005, terminal=201,transaccion=1296, estado=060325
+06/03/2025 16:04:46 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 16:08:54 - Filtro de datos: tienda=1013 - Veracruz, fecha=2025-03-06, estado=SIN CONFIRMAR
+06/03/2025 16:09:04 - Intentando Confirmar Registro : tienda=1013, terminal=19,transaccion=5612, estado=060325
+06/03/2025 16:09:09 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 16:09:32 - Filtro de datos: tienda=1013 - Veracruz, fecha=2025-03-06, estado=MOSTRAR TODO
+06/03/2025 16:11:54 - Intentando Confirmar Registro : tienda=1013, terminal=19,transaccion=5612, estado=060325
+06/03/2025 16:11:58 - Registro ya confirmado
+06/03/2025 16:15:02 - Filtro de datos: tienda=1014 - Leon, fecha=2025-03-06, estado=SIN CONFIRMAR
+06/03/2025 16:15:11 - Intentando Confirmar Registro : tienda=1014, terminal=144,transaccion=6199, estado=060325
+06/03/2025 16:15:14 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+06/03/2025 16:21:05 - Filtro de datos: tienda=1007 - Puebla, fecha=2025-03-06, estado=SIN CONFIRMAR
+06/03/2025 16:21:13 - Intentando Confirmar Registro : tienda=1007, terminal=147,transaccion=3558, estado=060325
+06/03/2025 16:21:18 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.

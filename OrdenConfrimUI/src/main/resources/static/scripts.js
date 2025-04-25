@@ -65,10 +65,16 @@
       const selectedValue = this.value;
       if (selectedValue === 'orden') {
         document.getElementById('orden-filter').style.display = 'block';
-        document.getElementById('tienda-fecha-estado-filter').style.display = 'none';
+        document.getElementById('store-filter').style.display = 'none';
+        document.getElementById('status-filter').style.display = 'none';
+        document.getElementById('date-filter').style.display = 'none';
+        document.getElementById('filter-button').style.display = 'none';
       } else if (selectedValue === 'tienda-fecha-estado') {
         document.getElementById('orden-filter').style.display = 'none';
-        document.getElementById('tienda-fecha-estado-filter').style.display = 'block';
+        document.getElementById('store-filter').style.display = 'block';
+        document.getElementById('status-filter').style.display = 'block';
+        document.getElementById('date-filter').style.display = 'block';
+        document.getElementById('filter-button').style.display = 'block';
       }
     });
 
@@ -151,6 +157,10 @@ document.getElementById('confirmar-button').addEventListener('click', function (
     this.disabled = false; // Volver a habilitar el botón si no hay selección
     return;
   }
+  
+  
+ 
+
 
   // Extraer los datos de la fila seleccionada
   const cells = selectedRow.querySelectorAll("td");
@@ -215,14 +225,53 @@ document.getElementById('confirmar-button').addEventListener('click', function (
 
 
 
-    // Establecer la fecha actual en el campo de fecha (Pestaña Filtro)
-    document.addEventListener('DOMContentLoaded', function () {
-      const dateInput = document.getElementById('date');
-      const today = new Date().toISOString().split('T')[0];
-      dateInput.value = today;
-      // Deshabilitar el botón "Confirmar" inicialmente
-      document.getElementById("confirmar-button").disabled = true;
-    });
+   // Establecer la fecha actual en los campos de fecha (Pestaña Filtro)
+// Establecer la fecha actual en los campos de fecha (Pestaña Filtro)
+document.addEventListener('DOMContentLoaded', function () {
+  const fichaInicioInput = document.getElementById('ficha-inicio');
+  const fechaFinalInput = document.getElementById('fecha-final');
+  const confirmarButton = document.getElementById("confirmar-button");
+  
+  const today = new Date().toISOString().split('T')[0];
+  
+  if (fichaInicioInput) {
+    fichaInicioInput.value = today;
+  }
+  
+  if (fechaFinalInput) {
+    fechaFinalInput.value = today;
+  }
+  
+  // Deshabilitar el botón "Confirmar" inicialmente
+  if (confirmarButton) {
+    confirmarButton.disabled = true;
+  }
+
+  // Función para validar que fecha-final no sea menor que ficha-inicio
+  function validarFechas() {
+    const fechaInicio = new Date(fichaInicioInput.value);
+    const fechaFinal = new Date(fechaFinalInput.value);
+    
+    if (fechaFinal < fechaInicio) {
+      // Si fecha-final es menor que fecha-inicio, mostrar un mensaje de error y deshabilitar el botón
+      alert("La fecha final no puede ser menor que la fecha de inicio.");
+      if (confirmarButton) {
+        confirmarButton.disabled = true;
+      }
+    } else {
+      // Si la fecha final es válida, habilitar el botón "Confirmar"
+      if (confirmarButton) {
+        confirmarButton.disabled = false;
+      }
+    }
+  }
+
+  // Escuchar los cambios en las fechas
+  fichaInicioInput.addEventListener('change', validarFechas);
+  fechaFinalInput.addEventListener('change', validarFechas);
+});
+
+
 
     // Evitar el envío del formulario al presionar Enter en el campo de Orden (Filtro)
     document.getElementById('orden').addEventListener('keydown', function (event) {
@@ -284,4 +333,60 @@ document.getElementById("filter-button-confirm").addEventListener("click", funct
 });
 
 
+
+  let currentSort = {};
+
+  function sortTable(columnIndex) {
+    const table = document.querySelector('table tbody');
+    const rows = Array.from(table.rows);
+    const arrow = document.getElementById(`arrow${columnIndex}`);
+
+    const isAscending = currentSort[columnIndex] === 'asc';
+    currentSort[columnIndex] = isAscending ? 'desc' : 'asc';
+
+    rows.sort((a, b) => {
+      const aText = a.cells[columnIndex].innerText.trim();
+      const bText = b.cells[columnIndex].innerText.trim();
+
+      const aValue = isNaN(aText) ? aText : parseFloat(aText);
+      const bValue = isNaN(bText) ? bText : parseFloat(bText);
+
+      return (aValue > bValue ? 1 : -1) * (isAscending ? -1 : 1);
+    });
+
+    rows.forEach(row => table.appendChild(row));
+
+    // Actualizar flechas
+    document.querySelectorAll('.arrow').forEach(span => span.innerHTML = '&#8597;');
+    arrow.innerHTML = isAscending ? '&#8593;' : '&#8595;';
+  }
+
+
+document.getElementById('export-button').addEventListener('click', function() {
+    document.getElementById('loading-spinner-confirmar').style.display = 'block';
+
+    fetch('/descargarExcel', {
+        method: 'POST',
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Error en la respuesta del servidor');
+        }
+        return response.blob();
+    })
+    .then(blob => {
+        document.getElementById('loading-spinner-confirmar').style.display = 'none';
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = "transacciones.xlsx";
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+    })
+    .catch(error => {
+        document.getElementById('loading-spinner-confirmar').style.display = 'none';
+        console.error('Error al descargar el archivo:', error);
+    });
+});
 

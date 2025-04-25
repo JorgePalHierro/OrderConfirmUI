@@ -1,0 +1,41 @@
+27/03/2025 10:52:08 - Intento de login con usuario: 52195802
+27/03/2025 10:52:09 - Logeo Exitoso
+27/03/2025 11:11:10 - Intento de login con usuario: 52195802
+27/03/2025 11:11:11 - Logeo Exitoso
+27/03/2025 11:13:12 - Intento de login con usuario: 52195802
+27/03/2025 11:13:12 - Logeo Exitoso
+27/03/2025 11:14:45 - Intento de login con usuario: 52195802
+27/03/2025 11:14:45 - Logeo Exitoso
+27/03/2025 11:16:05 - Intento de login con usuario: 52195802
+27/03/2025 11:16:05 - Logeo Exitoso
+27/03/2025 11:16:25 - Filtro de datos: tienda=, fechaInicio=2025-03-26, fechaFin=2025-03-27, estado=
+27/03/2025 11:16:29 - Filtro de datos: tienda=, fechaInicio=2025-03-24, fechaFin=2025-03-27, estado=
+27/03/2025 11:17:42 - Intento de login con usuario: 52195802
+27/03/2025 11:17:42 - Logeo Exitoso
+27/03/2025 11:17:46 - Filtro de datos: tienda=, fechaInicio=2025-03-27, fechaFin=2025-03-27, estado=
+27/03/2025 11:17:49 - Filtro de datos: tienda=, fechaInicio=2025-03-26, fechaFin=2025-03-27, estado=
+27/03/2025 11:18:08 - Filtro de datos: tienda=, fechaInicio=2025-03-26, fechaFin=2025-03-26, estado=
+27/03/2025 11:18:54 - Filtro de datos: tienda=1008, fechaInicio=2025-03-26, fechaFin=2025-03-26, estado=
+27/03/2025 11:24:26 - Intento de login con usuario: 52195802
+27/03/2025 11:24:27 - Logeo Exitoso
+27/03/2025 11:24:39 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-27, fechaFin=2025-03-27, estado=MOSTRAR TODO
+27/03/2025 11:24:46 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-26, fechaFin=2025-03-27, estado=MOSTRAR TODO
+27/03/2025 11:24:56 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-27, fechaFin=2025-03-27, estado=MOSTRAR TODO
+27/03/2025 11:45:24 - Intento de login con usuario: 52195802
+27/03/2025 11:45:24 - Logeo Exitoso
+27/03/2025 11:46:00 - Intento de login con usuario: 52195802
+27/03/2025 11:46:00 - Logeo Exitoso
+27/03/2025 11:50:00 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-27, fechaFin=2025-03-27, estado=MOSTRAR TODO
+27/03/2025 11:50:34 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-27, fechaFin=2025-03-27, estado=CONFIRMADO
+27/03/2025 11:50:36 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-27, fechaFin=2025-03-27, estado=SIN CONFIRMAR
+27/03/2025 12:47:49 - Intento de login con usuario: 52195802
+27/03/2025 12:47:49 - Logeo Exitoso
+27/03/2025 12:48:04 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-27, fechaFin=2025-03-27, estado=MOSTRAR TODO
+27/03/2025 12:50:38 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-27, fechaFin=2025-03-27, estado=MOSTRAR TODO
+27/03/2025 12:50:55 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-27, fechaFin=2025-03-27, estado=CONFIRMADO
+27/03/2025 12:51:04 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-27, fechaFin=2025-03-27, estado=SIN CONFIRMAR
+27/03/2025 12:51:22 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-27, fechaFin=2025-03-27, estado=CONFIRMADO
+27/03/2025 12:51:26 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-27, fechaFin=2025-03-27, estado=SIN CONFIRMAR
+27/03/2025 12:51:31 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-27, fechaFin=2025-03-27, estado=MOSTRAR TODO
+27/03/2025 17:56:10 - Intento de login con usuario: 52195802
+27/03/2025 17:56:11 - Logeo Exitoso

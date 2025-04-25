@@ -23,9 +23,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.Services.ConsultaService;
+import com.example.Utils.ConfirmacionOrdenService;
 import com.example.Utils.Log;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import jakarta.transaction.Transactional;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -49,16 +52,20 @@ public class OrderConfirmController {
 	private ConfirmacionOrdenRepository confirmacionOrdenRepository;
 	@Autowired
 	private Log log = new Log();
+	
 
 	private PatchService patchService;
+	 private final ConfirmacionOrdenService confirmacionOrdenService;
 
-	@Autowired
-	public OrderConfirmController(PatchService patchService) {
-		this.patchService = patchService;
-	}
+	 @Autowired
+	    public OrderConfirmController(ConfirmacionOrdenService confirmacionOrdenService, PatchService patchService) {
+	        this.confirmacionOrdenService = confirmacionOrdenService;
+	        this.patchService = patchService;
+	    }
+	
 
 	List<TransaccionDTO> transaccionesDTO;
-
+	
 	@GetMapping("/")
 	public String redireccionar(Model model) {
 		model.addAttribute("loginForm", new LoginForm());
@@ -67,10 +74,10 @@ public class OrderConfirmController {
 
 	@PostMapping("/ordenesconfirmadas")
 	public String login(@ModelAttribute LoginForm loginForm, Model model) {
-		 log.escribirLog("Intento de login con usuario: " + loginForm.getUsername());
+		log.escribirLog("Intento de login con usuario: " + loginForm.getUsername());
 		if (authService.validate(loginForm.getUsername(), loginForm.getPassword())) {
 
-			 log.escribirLog("Logeo Exitoso");
+			log.escribirLog("Logeo Exitoso");
 			Optional<Posusuarios> usuar = userRepository.findById(loginForm.getUsername());
 
 			String NumTienda = usuar.map(Posusuarios::getCNUMTIEN).orElse(null);
@@ -90,43 +97,43 @@ public class OrderConfirmController {
 	}
 
 	@PostMapping("/filtrar")
-	public String filtrarDatos(@RequestParam String tienda, @RequestParam String fecha, @RequestParam String estado,
-			Model model) throws ParseException {
-		log.escribirLog("Filtro de datos: tienda=" + tienda + ", fecha=" + fecha + ", estado=" + estado);
-	    
-		SimpleDateFormat formatoEntrada = new SimpleDateFormat("yyyy-MM-dd");
-		// Crear un objeto SimpleDateFormat con el formato de salida
-		SimpleDateFormat formatoSalida = new SimpleDateFormat("ddMMyy");
+	public String filtrarDatos(@RequestParam String tienda,
+	                            @RequestParam String fechaInicio,
+	                            @RequestParam String fechaFin,
+	                            @RequestParam String estado,
+	                            Model model) throws ParseException {
 
-		// Parsear la fecha de entrada
-		Date fechaOrden = formatoEntrada.parse(fecha);
+	    log.escribirLog("Filtro de datos: tienda=" + tienda + ", fechaInicio=" + fechaInicio + ", fechaFin=" + fechaFin + ", estado=" + estado);
 
-		// Formatear la fecha en el nuevo formato
-		String fechaFormateada = formatoSalida.format(fechaOrden);
+	    // Formatos para parsear y formatear
+	    SimpleDateFormat formatoEntrada = new SimpleDateFormat("yyyy-MM-dd");
+	    SimpleDateFormat formatoSalida = new SimpleDateFormat("ddMMyy");
 
-		List<ConfirmacionOrden> transacciones;
+	    // Convertir fechas
+	    Date fechaInicioDate = formatoEntrada.parse(fechaInicio);
+	    Date fechaFinDate = formatoEntrada.parse(fechaFin);
+	    String fechaInicioFormateada = formatoSalida.format(fechaInicioDate);
+	    String fechaFinFormateada = formatoSalida.format(fechaFinDate);
 
-		if (estado.contains("MOSTRAR TODO")) {
-			System.out.println("Estado:" + estado);
-			transacciones = confirmacionOrdenRepository.findByConsecutivoAndTiendaAndFecha("999",
-					tienda.substring(0, 4), fechaFormateada);
-		} else {
-			System.out.println("Estado:" + estado);
-			transacciones = confirmacionOrdenRepository.findByConsecutivoAndTiendaAndFechaAndConfirmacion("999",
-					tienda.substring(0, 4), fechaFormateada, tablaConfirmacionDN(estado));
-		}
+	    List<ConfirmacionOrden> transacciones;
 
-		// Convertir las entidades de ConfirmacionOrden a DTOs (si es necesario)
-		transaccionesDTO = transacciones.stream().map(this::convertirAArquitecturaDTO).collect(Collectors.toList());
+	    if (estado.contains("MOSTRAR TODO")) {
+	        transacciones = confirmacionOrdenRepository.findByTiendaAndFechaInInterval(
+	                tienda.substring(0, 4), fechaInicioFormateada, fechaFinFormateada);
+	    } else {
+	        transacciones = confirmacionOrdenRepository.findByTiendaAndFechaInIntervalAndConfirmacion(
+	                tienda.substring(0, 4), fechaInicioFormateada, fechaFinFormateada,
+	                Long.parseLong(tablaConfirmacionDN(estado)));
+	    }
 
-		// Pasar las transacciones filtradas al modelo
-		model.addAttribute("transacciones", transaccionesDTO);
+	    transaccionesDTO = transacciones.stream().map(this::convertirAArquitecturaDTO).collect(Collectors.toList());
 
-		// Pasar las tiendas al modelo para el formulario de filtro
-		model.addAttribute("tiendas", cargarListaTiendas("9999"));
+	    model.addAttribute("transacciones", transaccionesDTO);
+	    model.addAttribute("tiendas", cargarListaTiendas("9999"));
 
-		return "index"; // Recargar la vista con los resultados
+	    return "index"; // Regresar la vista
 	}
+
 
 	@PostMapping("/filtrarConfirm")
 	public String filtrarDatosConfirmacion(@RequestParam String tienda, @RequestParam String terminal,
@@ -149,13 +156,17 @@ public class OrderConfirmController {
 
 		System.out.println("Estado: " + estado);
 
-		transaccionesTienda = confirmacionOrdenRepository.findByConsecutivoAndTienda(consecutivo, tiendaFiltrada);
+		transaccionesTienda = confirmacionOrdenRepository.findByConsecutivoAndTienda(Long.parseLong(consecutivo),
+				tiendaFiltrada);
 		if (!terminal.isEmpty())
-			transaccionesTerminal = confirmacionOrdenRepository.findByConsecutivoAndTerminal(consecutivo, terminal);
+			transaccionesTerminal = confirmacionOrdenRepository
+					.findByConsecutivoAndTerminal(Long.parseLong(consecutivo), terminal);
 		if (!transaccion.isEmpty())
-			transaccionesTransaccion = confirmacionOrdenRepository.findByConsecutivoAndTransaccion(consecutivo, transaccion);
+			transaccionesTransaccion = confirmacionOrdenRepository
+					.findByConsecutivoAndTransaccion(Long.parseLong(consecutivo), transaccion);
 		if (!estado.contains("MOSTRAR TODO"))
-			transaccionesEstado = confirmacionOrdenRepository.findByConsecutivoAndConfirmacion(consecutivo,tablaConfirmacionDN(estado));
+			transaccionesEstado = confirmacionOrdenRepository.findByConsecutivoAndConfirmacion(
+					Long.parseLong(consecutivo), Long.parseLong(tablaConfirmacionDN(estado)));
 
 		resultados = obtenerRegistrosComunes(transaccionesTienda, transaccionesTerminal, transaccionesTransaccion,
 				transaccionesEstado);
@@ -181,7 +192,7 @@ public class OrderConfirmController {
 
 		List<ConfirmacionOrden> transacciones;
 
-		transacciones = confirmacionOrdenRepository.findByConsecutivoAndNumeroOrden("999", orden);
+		transacciones = confirmacionOrdenRepository.findByConsecutivoAndNumeroOrden(Long.parseLong("999"), orden);
 
 		// Convertir las entidades de ConfirmacionOrden a DTOs (si es necesario)
 		transaccionesDTO = transacciones.stream().map(this::convertirAArquitecturaDTO).collect(Collectors.toList());
@@ -250,8 +261,10 @@ public class OrderConfirmController {
 
 	@PostMapping("/confirmar")
 	public ResponseEntity<String> confirmar(@RequestBody Ticket confirmData) {
-		log.escribirLog("Intentando Confirmar Registro : tienda=" + confirmData.getNumeroTienda() + ", terminal=" + confirmData.getTerminal() +",transaccion=" +confirmData.getTransaccion()+", estado=" + confirmData.getFecha());
-		
+		log.escribirLog("Intentando Confirmar Registro : tienda=" + confirmData.getNumeroTienda() + ", terminal="
+				+ confirmData.getTerminal() + ",transaccion=" + confirmData.getTransaccion() + ", estado="
+				+ confirmData.getFecha());
+
 		// Mostrar en consola los datos recibidos (puedes quitarlo en producción)
 		System.out.println("Tienda: " + confirmData.getNumeroTienda());
 		System.out.println("Terminal: " + confirmData.getTerminal());
@@ -268,7 +281,7 @@ public class OrderConfirmController {
 		System.out.println(consulta.getApiResponse(confirmData.getOrden()));
 		try {
 			System.out
-					.println("Instrumento: " + getPaymentInstrumentId(consulta.getApiResponse(confirmData.getOrden())));			
+					.println("Instrumento: " + getPaymentInstrumentId(consulta.getApiResponse(confirmData.getOrden())));
 			confirmData.setInstrumento(getPaymentInstrumentId(consulta.getApiResponse(confirmData.getOrden())));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -282,12 +295,11 @@ public class OrderConfirmController {
 					confirmData.getTerminal(), confirmData.getNumeroTienda(), confirmData.getTransaccion(),
 					confirmData.getFecha());
 			System.out.println("Respuesta de clase patch: " + resp);
-			
+
 			if (resp.contains("Error: Registro duplicado")) {
 				resp = "Error: Registro duplicado";
 				log.escribirLog("Error: Registro duplicado");
-				
-				
+
 			} else if (resp.contains("Registro ya confirmado")) {
 				resp = "Registro ya confirmado";
 				log.escribirLog("Registro ya confirmado");
@@ -295,13 +307,35 @@ public class OrderConfirmController {
 				if (resp.contains("Registro caducado")) {
 					resp = "Error: Registro vencido";
 					log.escribirLog("Error: Registro vencido");
-				} else
+				} else {
 					resp = "Registro confirmado con exito, espere unos minutos para que se actualice el registro.";
-				log.escribirLog("Registro confirmado con exito, espere unos minutos para que se actualice el registro.");
-			}
+					log.escribirLog(
+							"Registro confirmado con exito, espere unos minutos para que se actualice el registro.");
+					
+					
 
-			// resp = "Orden confrmada exitosamente, espera unos minutos para que se refleje
-			// el cambio en la tabla";
+					List<ConfirmacionOrden> ordenList = confirmacionOrdenRepository
+							.findByConsecutivoAndTiendaAndTerminalAndTransaccion(Long.parseLong("999"),
+									confirmData.getNumeroTienda(), confirmData.getTerminal(),
+									confirmData.getTransaccion());
+
+					System.out.println("Fecha:" + confirmData.getFecha() + " Orden:" + confirmData.getOrden()
+							+ " Transacción:" + confirmData.getTransaccion() + " Terminal:" + confirmData.getTerminal()
+							+ " Tienda:" + confirmData.getNumeroTienda());
+
+					if (!ordenList.isEmpty()) {
+						ConfirmacionOrden orden = ordenList.get(0); // Tomar el primer elemento de la lista
+						System.out.println("Orden 1:" +orden.toString());
+						confirmacionOrdenService.insertOrUpdateRecords(orden);
+						//orden.setConfirmacion(1); // Actualizar el campo CONFIRMACION
+						//confirmacionOrdenRepository.save(orden); // Guardar la orden actualizada
+						return ResponseEntity.ok("Confirmación actualizada correctamente.");
+					} else {
+						return ResponseEntity.badRequest()
+								.body("Orden no encontrada con los parámetros proporcionados.");
+					}
+				}
+			}
 		} catch (IOException e) {
 			resp = "Error en el servidor:  " + e.getMessage();
 			log.escribirLog("Error en el servidor:  " + e.getMessage());
@@ -325,10 +359,10 @@ public class OrderConfirmController {
 
 	private TransaccionDTO convertirAArquitecturaDTO(ConfirmacionOrden orden) {
 		return new TransaccionDTO(orden.getTienda(), orden.getTerminal(), orden.getTransaccion(), orden.getFecha(),
-				orden.getNumeroOrden(), tablaConversion(orden.getTipo()), orden.getNumTarjeta(),
-				convertAndDivide(orden.getImporte()), orden.getVendedor(), orden.getEsquema(),
+				orden.getNumeroOrden(), String.valueOf(orden.getTipo()), orden.getNumTarjeta(),
+				convertAndDivide(String.valueOf(orden.getImporte())), orden.getVendedor(), orden.getEsquema(),
 				orden.getNumAutorizacion(), orden.getCodigoRespuesta(), null,
-				tablaConfirmacion(orden.getConfirmacion()));
+				tablaConfirmacion(String.valueOf(orden.getConfirmacion())));
 	}
 
 	// Método para convertir un String, dividir entre 100 y devolver el resultado
@@ -450,5 +484,8 @@ public class OrderConfirmController {
 
 		return new ArrayList<>(interseccion);
 	}
+	
+	 
+	
 
 }

@@ -50,50 +50,82 @@
 								</select>
 							</div>
 						</div>
-						<div class="col-md-8 text-right">
-							<!-- Botón de Exportar -->
-							<button class="btn-filter" type="button" id="export-button">
-								<i class="bi bi-file-earmark-excel"></i> Generar Excel
-							</button>
+
+
+						<!-- Filtro: Tienda -->
+						<div id="store-filter" class="row mb-4"
+							style="display: none; justify-content: center;">
+							<div
+								class="col-12 d-flex justify-content-center align-items-center flex-wrap">
+								<div class="form-group mr-2"
+									style="min-width: 180px; text-align: center;">
+									<label for="store">Tienda:</label> <select id="store"
+										name="tienda" class="form-control" style="width: 300px;">
+										<th:block th:each="tienda : ${tiendas}">
+											<option th:value="${tienda}" th:text="${tienda}"></option>
+										</th:block>
+									</select>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- Filtro: Estado -->
+						<div id="status-filter" class="row mb-4" style="display: none;">
+							<div class="col-12">
+								<div class="form-group text-right">
+									<label for="status">Estado:</label> <select id="status"
+										name="estado" class="form-control" style="width: 300px;">
+										<option value="MOSTRAR TODO">Mostrar todo</option>
+										<option value="CONFIRMADO">Confirmado</option>
+										<option value="SIN CONFIRMAR">Sin confirmar</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+
+
+					<!-- Filtro: Fechas -->
+					<div id="date-filter" class="row mb-4" style="display: none;">
+						<div class="col-12">
+							<fieldset class="border p-3 rounded d-flex align-items-center"
+								style="border-width: 3px; width: fit-content;">
+								<legend class="w-auto">Fechas</legend>
+
+								<!-- Fecha de inicio -->
+								<div class="form-group mr-3" style="min-width: 150px;">
+									<label for="ficha-inicio">Fecha de inicio:</label> <input
+										type="date" id="ficha-inicio" name="fechaInicio"
+										class="form-control">
+								</div>
+
+								<!-- Fecha final -->
+								<div class="form-group" style="min-width: 150px;">
+									<label for="fecha-final">Fecha final:</label> <input
+										type="date" id="fecha-final" name="fechaFin"
+										class="form-control">
+								</div>
+							</fieldset>
 						</div>
 					</div>
 
-					<!-- Filtro: tienda, fecha y estado -->
-					<div id="tienda-fecha-estado-filter"
-						class="row mb-4 justify-content-center" style="display: none;">
-						<div
-							class="col-12 d-flex flex-wrap justify-content-center align-items-center">
-							<div class="form-group mr-3"
-								style="min-width: 200px; text-align: center;">
-								<label for="store">Tienda:</label> <select id="store"
-									name="tienda" class="form-control">
-									<th:block th:each="tienda : ${tiendas}">
-										<option th:value="${tienda}" th:text="${tienda}"></option>
-									</th:block>
-								</select>
-							</div>
-							<div class="form-group mr-3"
-								style="min-width: 300px; text-align: center;">
-								<label for="date">Fecha:</label> <input type="date" id="date"
-									name="fecha" class="form-control">
-							</div>
-							<div class="form-group mr-3"
-								style="min-width: 300px; text-align: center;">
-								<label for="status">Estado:</label> <select id="status"
-									name="estado" class="form-control">
-									<option value="MOSTRAR TODO">Mostrar todo</option>
-									<option value="CONFIRMADO">Confirmado</option>
-									<option value="SIN CONFIRMAR">Sin confirmar</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-12 text-center mt-3">
-							<button class="btn-filter btn btn-primary" type="button"
-								id="filter-button">
-								<i class="fas fa-search"></i> Filtrar
-							</button>
-						</div>
-					</div>
+
+
+					<!-- Botón de filtro -->
+					<button class="btn-filter btn btn-primary ml-2" type="button"
+						id="filter-button"
+						style="display: none; position: relative; top: 1px;">
+						<i class="fas fa-search"></i> Filtrar
+					</button>
+
+
+
+
+
 
 					<!-- Filtro: número de Orden -->
 					<div id="orden-filter" class="row mb-4 justify-content-center">
@@ -189,8 +221,8 @@
 
 							<div class="form-group"
 								style="min-width: 300px; text-align: center;">
-								<label for="transaccion-confirm">Transacción:</label> <input									
-										type="text" id="transaccion-confirm" name="transaccion"
+								<label for="transaccion-confirm">Transacción:</label> <input
+									type="text" id="transaccion-confirm" name="transaccion"
 									class="form-control" pattern="\d{4}" minlength="4"
 									maxlength="4"
 									oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 4);"
@@ -244,24 +276,44 @@
 
 
 
+		<!-- Botón de Exportar (Ajustado arriba de la tabla de registros) -->
+		<div class="row mb-1">
+			<!-- Reducir mb-4 a mb-1 -->
+			<div class="col-12 text-right">
+				<button class="btn-filter btn btn-success" type="button"
+					id="export-button" style="margin-bottom: 5px;">
+					<i class="bi bi-file-earmark-excel"></i> Generar Excel
+				</button>
+			</div>
+		</div>
+
+
 
 
 		<!-- Contenedor para mostrar mensajes al seleccionar celdas -->
 		<div id="mensaje-error"
 			style="display: none; color: red; padding: 10px; background-color: #f8d7da; border-radius: 5px;"></div>
 
-		<!-- Tabla de resultados (visible en ambas pestañas) -->
+		<!-- Tabla de resultados con flechas para ordenar -->
 		<table class="table table-bordered table-striped mt-4">
 			<thead>
 				<tr>
-					<th>Tienda</th>
-					<th>Terminal</th>
-					<th>Transacción</th>
-					<th>Fecha</th>
-					<th>Orden</th>
-					<th>Vendedor</th>
-					<th>Importe</th>
-					<th>Estado</th>
+					<th onclick="sortTable(0)">Tienda <span class="arrow"
+						id="arrow0">&#8597;</span></th>
+					<th onclick="sortTable(1)">Terminal <span class="arrow"
+						id="arrow1">&#8597;</span></th>
+					<th onclick="sortTable(2)">Transacción <span class="arrow"
+						id="arrow2">&#8597;</span></th>
+					<th onclick="sortTable(3)">Fecha <span class="arrow"
+						id="arrow3">&#8597;</span></th>
+					<th onclick="sortTable(4)">Orden <span class="arrow"
+						id="arrow4">&#8597;</span></th>
+					<th onclick="sortTable(5)">Vendedor <span class="arrow"
+						id="arrow5">&#8597;</span></th>
+					<th onclick="sortTable(6)">Importe <span class="arrow"
+						id="arrow6">&#8597;</span></th>
+					<th onclick="sortTable(7)">Estado <span class="arrow"
+						id="arrow7">&#8597;</span></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -279,22 +331,20 @@
 				</th:block>
 			</tbody>
 		</table>
-	</div>
+		<!-- Dependencias para el funcionamiento de los tabs (jQuery, Popper.js y Bootstrap JS) -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu9sIY0cMTxOpL63SxH+mHCzMzCj5t2yE0gLhAHs3pXQ4y6"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"></script>
 
-	<!-- Dependencias para el funcionamiento de los tabs (jQuery, Popper.js y Bootstrap JS) -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu9sIY0cMTxOpL63SxH+mHCzMzCj5t2yE0gLhAHs3pXQ4y6"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-		crossorigin="anonymous"></script>
-
-	<!-- Lógica JavaScript -->
-	<script src="scripts.js"></script>
+		<!-- Lógica JavaScript -->
+		<script src="scripts.js"></script>
 </body>
 </html>

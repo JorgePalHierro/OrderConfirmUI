@@ -1,0 +1,14 @@
+24/03/2025 16:47:38 - Intento de login con usuario: 52195802
+24/03/2025 16:47:39 - Logeo Exitoso
+24/03/2025 16:56:29 - Intento de login con usuario: 52195802
+24/03/2025 16:56:30 - Logeo Exitoso
+24/03/2025 17:00:51 - Intento de login con usuario: 52195802
+24/03/2025 17:00:51 - Logeo Exitoso
+24/03/2025 17:03:58 - Intento de login con usuario: 52195802
+24/03/2025 17:03:58 - Logeo Exitoso
+24/03/2025 17:10:38 - Intento de login con usuario: 52195802
+24/03/2025 17:10:39 - Logeo Exitoso
+24/03/2025 17:12:25 - Intento de login con usuario: 52195802
+24/03/2025 17:12:26 - Logeo Exitoso
+24/03/2025 17:21:12 - Intento de login con usuario: 52195802
+24/03/2025 17:21:12 - Logeo Exitoso

@@ -1,0 +1,87 @@
+28/03/2025 09:00:05 - Intento de login con usuario: 52195802
+28/03/2025 09:00:05 - Logeo Exitoso
+28/03/2025 09:05:12 - Intento de login con usuario: 52195802
+28/03/2025 09:05:13 - Logeo Exitoso
+28/03/2025 09:05:58 - Intento de login con usuario: 52195802
+28/03/2025 09:05:59 - Logeo Exitoso
+28/03/2025 09:51:29 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-26, fechaFin=2025-03-28, estado=MOSTRAR TODO
+28/03/2025 11:08:35 - Intento de login con usuario: 52195802
+28/03/2025 11:08:35 - Logeo Exitoso
+28/03/2025 11:21:52 - Intento de login con usuario: 52195802
+28/03/2025 11:21:52 - Logeo Exitoso
+28/03/2025 11:25:00 - Intento de login con usuario: 52195802
+28/03/2025 11:25:00 - Logeo Exitoso
+28/03/2025 11:25:42 - Intento de login con usuario: 52195802
+28/03/2025 11:25:42 - Logeo Exitoso
+28/03/2025 11:26:17 - Intento de login con usuario: 52195802
+28/03/2025 11:26:17 - Logeo Exitoso
+28/03/2025 11:26:59 - Intento de login con usuario: 52195802
+28/03/2025 11:26:59 - Logeo Exitoso
+28/03/2025 11:27:51 - Intento de login con usuario: 52195802
+28/03/2025 11:27:51 - Logeo Exitoso
+28/03/2025 11:28:19 - Intento de login con usuario: 52195802
+28/03/2025 11:28:20 - Logeo Exitoso
+28/03/2025 11:28:53 - Intento de login con usuario: 52195802
+28/03/2025 11:28:54 - Logeo Exitoso
+28/03/2025 11:45:51 - Intento de login con usuario: 52195802
+28/03/2025 11:45:52 - Logeo Exitoso
+28/03/2025 11:48:29 - Intento de login con usuario: 52195802
+28/03/2025 11:48:30 - Logeo Exitoso
+28/03/2025 11:51:19 - Intento de login con usuario: 52195802
+28/03/2025 11:51:20 - Logeo Exitoso
+28/03/2025 11:51:58 - Intento de login con usuario: 52195802
+28/03/2025 11:51:59 - Logeo Exitoso
+28/03/2025 11:52:37 - Intento de login con usuario: 52195802
+28/03/2025 11:52:38 - Logeo Exitoso
+28/03/2025 11:55:44 - Intento de login con usuario: 52195802
+28/03/2025 11:55:44 - Logeo Exitoso
+28/03/2025 12:14:00 - Intento de login con usuario: 52195802
+28/03/2025 12:14:01 - Logeo Exitoso
+28/03/2025 12:18:46 - Intento de login con usuario: 52195802
+28/03/2025 12:18:46 - Logeo Exitoso
+28/03/2025 12:19:39 - Intento de login con usuario: 52195802
+28/03/2025 12:19:39 - Logeo Exitoso
+28/03/2025 12:20:12 - Intento de login con usuario: 52195802
+28/03/2025 12:20:12 - Logeo Exitoso
+28/03/2025 12:20:37 - Intento de login con usuario: 52195802
+28/03/2025 12:20:38 - Logeo Exitoso
+28/03/2025 12:24:42 - Intento de login con usuario: 52195802
+28/03/2025 12:24:42 - Logeo Exitoso
+28/03/2025 12:33:27 - Intento de login con usuario: 52195802
+28/03/2025 12:33:27 - Logeo Exitoso
+28/03/2025 12:35:02 - Intento de login con usuario: 52195802
+28/03/2025 12:35:03 - Logeo Exitoso
+28/03/2025 12:37:10 - Intento de login con usuario: 52195802
+28/03/2025 12:37:10 - Logeo Exitoso
+28/03/2025 12:39:00 - Intento de login con usuario: 52195802
+28/03/2025 12:39:01 - Logeo Exitoso
+28/03/2025 13:14:54 - Intento de login con usuario: 52195802
+28/03/2025 13:14:55 - Logeo Exitoso
+28/03/2025 13:15:54 - Intento de login con usuario: 52195802
+28/03/2025 13:15:55 - Logeo Exitoso
+28/03/2025 13:16:30 - Intento de login con usuario: 52195802
+28/03/2025 13:16:31 - Logeo Exitoso
+28/03/2025 13:21:02 - Intento de login con usuario: 52195802
+28/03/2025 13:21:03 - Logeo Exitoso
+28/03/2025 13:21:48 - Intento de login con usuario: 52195802
+28/03/2025 13:21:48 - Logeo Exitoso
+28/03/2025 13:24:39 - Intento de login con usuario: 52195802
+28/03/2025 13:24:40 - Logeo Exitoso
+28/03/2025 13:26:24 - Intento de login con usuario: 52195802
+28/03/2025 13:26:24 - Logeo Exitoso
+28/03/2025 13:27:25 - Intento de login con usuario: 52195802
+28/03/2025 13:27:26 - Logeo Exitoso
+28/03/2025 13:28:32 - Intento de login con usuario: 52195802
+28/03/2025 13:28:32 - Logeo Exitoso
+28/03/2025 13:29:20 - Intento de login con usuario: 52195802
+28/03/2025 13:29:20 - Logeo Exitoso
+28/03/2025 13:29:31 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-28, fechaFin=2025-03-28, estado=MOSTRAR TODO
+28/03/2025 13:29:39 - Filtro de datos: tienda=1000 - Centro, fechaInicio=2025-03-25, fechaFin=2025-03-28, estado=MOSTRAR TODO
+28/03/2025 13:30:16 - Intento de login con usuario: 52195802
+28/03/2025 13:30:16 - Logeo Exitoso
+28/03/2025 13:33:03 - Intento de login con usuario: 52195802
+28/03/2025 13:33:03 - Logeo Exitoso
+28/03/2025 13:33:43 - Intento de login con usuario: 52195802
+28/03/2025 13:33:43 - Logeo Exitoso
+28/03/2025 13:34:12 - Intento de login con usuario: 52195802
+28/03/2025 13:34:13 - Logeo Exitoso

@@ -46,6 +46,13 @@
   font-size: 14px; 
       transition: background-color 0.3s ease;
     }
+     th {
+    cursor: pointer;
+  }
+  .arrow {
+    font-size: 12px;
+    margin-left: 8px;
+  }
     .btn-filter:hover {
       background-color: #e0a800;
       
@@ -108,6 +115,16 @@
   padding: 10px; /* Ajusta el relleno si es necesario */
   font-size: 14px; 
     }
+    
+    /* Reducir espacio entre los botones */
+.btn-filter {
+    margin-bottom: 5px !important;  /* Ajustar el espacio entre los botones */
+}
+
+#export-button {
+    margin-top: 5px !important;  /* Ajustar el margen superior para el botón de exportar */
+}
+    
     
     
     

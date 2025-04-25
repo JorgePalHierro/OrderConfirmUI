@@ -1,0 +1,17 @@
+11/03/2025 08:29:15 - Intento de login con usuario: 52195802
+11/03/2025 08:29:16 - Logeo Exitoso
+11/03/2025 08:32:00 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-10, estado=MOSTRAR TODO
+11/03/2025 08:32:09 - Filtro de datos: tienda=1008 - Santa Fe, fecha=2025-02-01, estado=MOSTRAR TODO
+11/03/2025 08:32:15 - Intentando Confirmar Registro : tienda=1008, terminal=181,transaccion=2887, estado=010225
+11/03/2025 08:32:18 - Error: Registro vencido
+11/03/2025 09:15:33 - Intento de login con usuario: 52195802
+11/03/2025 09:15:33 - Logeo Exitoso
+11/03/2025 12:20:06 - Intento de login con usuario: 52195802
+11/03/2025 12:20:06 - Logeo Exitoso
+11/03/2025 12:36:08 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-11, estado=MOSTRAR TODO
+11/03/2025 12:36:13 - Intentando Confirmar Registro : tienda=1000, terminal=145,transaccion=5972, estado=110325
+11/03/2025 12:36:17 - Registro confirmado con exito, espere unos minutos para que se actualice el registro.
+11/03/2025 12:36:22 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-11, estado=MOSTRAR TODO
+11/03/2025 13:01:03 - Filtro de datos: tienda=1000 - Centro, fecha=2025-03-11, estado=MOSTRAR TODO
+11/03/2025 17:01:12 - Intento de login con usuario: 52195802
+11/03/2025 17:01:12 - Logeo Exitoso
